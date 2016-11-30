@@ -5,26 +5,26 @@ app.config(function($routeProvider){
   $routeProvider
   .when('/', {
     controller: 'mainCtrl',
-    templateUrl: 'main.html'
+    templateUrl: 'partials/main.html'
   })
 
   .when('/rock', {
     controller: 'rockCtrl',
-    templateUrl: 'rock.html'
+    templateUrl: 'partials/rock.html'
   })
 
   .when('/pop', {
     controller: 'popCtrl',
-    templateUrl: 'pop.html'
+    templateUrl: 'partials/pop.html'
   })
 
   .when('/country', {
     controller: 'countryCtrl',
-    templateUrl: 'country.html'
+    templateUrl: 'partials/country.html'
   })
-  
+
   .when('/rap', {
     controller: 'rapCtrl',
-    templateUrl: 'rap.html'
+    templateUrl: 'partials/rap.html'
   });
 });
