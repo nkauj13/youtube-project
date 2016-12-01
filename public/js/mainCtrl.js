@@ -1,6 +1,7 @@
 var app = angular.module('musicMod');
 
 app.controller('mainCtrl', function($scope){
+//app.controller('mainCtrl', function($scope, $location){
 //app.controller('mainCtrl', function($scope, $location, ytFactory){
 
 //user selection: 
@@ -40,9 +41,6 @@ app.controller('mainCtrl', function($scope){
 //change view:
 
 	/*	
-		//configure the $location service:
-		$locationProvider.html5Mode(true); //pulled this example from https://docs.angularjs.org/guide/$location
-
 		//change the view based on user selection:
 		$scope.changeViews = function(genre){
 	

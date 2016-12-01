@@ -1,6 +1,6 @@
 var app = angular.module('musicMod', ['ngRoute']);
 
-app.config(function($routeProvider){
+app.config(function($routeProvider, $locationProvider){
 
   $routeProvider
   .when('/', {
@@ -27,5 +27,8 @@ app.config(function($routeProvider){
     controller: 'musicCtrl',
     templateUrl: 'partials/rap.html'
   });
+
+  //configure the $location service:
+  $locationProvider.html5Mode(true); //pulled this example from https://docs.angularjs.org/guide/$location & https://scotch.io/tutorials/pretty-urls-in-angularjs-removing-the-hashtag
 
 });
