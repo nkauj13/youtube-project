@@ -1,9 +1,9 @@
 var app = angular.module('musicMod');
 
-app.controller('mainCtrl', function($scope, $location){
-//app.controller('mainCtrl', function($scope, $location, ytFactory){
+// app.controller('mainCtrl', function($scope, $location){
+app.controller('mainCtrl', function($scope, $location, ytFactory){
 
-//user selection: 
+//user selection:
 
 	//arrays for populating select options:
 	$scope.yearArray = ['1990','2000','2010'];
@@ -41,7 +41,7 @@ app.controller('mainCtrl', function($scope, $location){
 		console.log(queryStringYT);
 
 		//send the query string to the YT Factory via queryYT method (& trigger the YT API call):
-			//ytFactory.queryYT(queryStringYT);
+			ytFactory.queryYT(queryStringYT);
 
 	}
 
