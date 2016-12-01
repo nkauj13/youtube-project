@@ -1,1 +1,36 @@
+.wrapper{
+    background-color: #554250;
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
 
+h1.logo{
+    background-repeat: no-repeat;
+    width: 100px;
+    text-indent: -10000px;
+    float: left;
+}
+
+header nav{
+    float: right;
+}
+
+header nav h2{
+    text-indent: -10000px;
+    height: 0;
+    margin: 0;
+}
+
+header nav li{
+    float: left;
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
