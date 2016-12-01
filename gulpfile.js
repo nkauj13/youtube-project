@@ -20,6 +20,6 @@ gulp.task('serve', ['sass'], function() {
 gulp.task('sass', function() {
     return gulp.src("sass/*.scss")
         .pipe(sass())
-        .pipe(gulp.dest("./"))
+        .pipe(gulp.dest("./public"))
         .pipe(browserSync.stream());
 });

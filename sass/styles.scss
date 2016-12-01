@@ -1,1 +1,27 @@
 @import "variables";
+
+body {
+  background-color: $main-body;
+}
+
+.wrapper{
+    background-color: $main-header;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.header {
+  background-color: $main-header;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+
+}
