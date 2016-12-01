@@ -27,5 +27,5 @@ app.config(function($routeProvider){
     controller: 'rapCtrl',
     templateUrl: 'partials/rap.html'
   });
-});
 
+});
