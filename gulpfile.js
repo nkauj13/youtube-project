@@ -10,7 +10,7 @@ gulp.task('default', function() {
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        server: "./"
+        server: "./public"
     });
 
     gulp.watch("sass/*.scss", ['sass']);
