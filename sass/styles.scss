@@ -1,8 +1,5 @@
 @import "variables";
 
-body {
-  background-color: $main-body;
-}
 
 .wrapper{
     background-color: $main-header;
@@ -24,4 +21,13 @@ body {
   width: 100%;
   padding: 1rem;
 
+}
+
+.mainview{
+  background-color: $rock-body;
+
+}
+
+.main-description{
+  background-color: $rock-bodytwo
 }

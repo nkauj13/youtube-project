@@ -13,12 +13,12 @@ gulp.task('serve', ['sass'], function() {
         server: "./public"
     });
 
-    gulp.watch("sass/*.scss", ['sass']);
+    gulp.watch("public/sass/*.scss", ['sass']);
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
-    return gulp.src("sass/*.scss")
+    return gulp.src("./sass/**/*.scss")
         .pipe(sass())
         .pipe(gulp.dest("./public"))
         .pipe(browserSync.stream());
