@@ -9,22 +9,22 @@ app.config(function($routeProvider){
   })
 
   .when('/rock', {
-    controller: 'rockCtrl',
+    controller: 'musicCtrl',
     templateUrl: 'partials/rock.html'
   })
 
   .when('/pop', {
-    controller: 'popCtrl',
+    controller: 'musicCtrl',
     templateUrl: 'partials/pop.html'
   })
 
   .when('/country', {
-    controller: 'countryCtrl',
+    controller: 'musicCtrl',
     templateUrl: 'partials/country.html'
   })
 
   .when('/rap', {
-    controller: 'rapCtrl',
+    controller: 'musicCtrl',
     templateUrl: 'partials/rap.html'
   });
 
