@@ -1,0 +1,10 @@
+var app = angular.module('musicMod');
+
+app.controller('rapCtrl', function($scope){
+
+
+
+
+	//change view
+
+});
