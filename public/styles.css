@@ -20,4 +20,10 @@
   background-color: #401841; }
 
 .main-description {
-  background-color: #811C4E; }
+  background-color: #811C4E;
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
