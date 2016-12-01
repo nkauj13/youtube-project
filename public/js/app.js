@@ -29,6 +29,12 @@ app.config(function($routeProvider, $locationProvider){
   });
 
   //configure the $location service:
-  $locationProvider.html5Mode(true); //pulled this example from https://docs.angularjs.org/guide/$location & https://scotch.io/tutorials/pretty-urls-in-angularjs-removing-the-hashtag
+  // $locationProvider.html5Mode(true); //pulled this example from https://docs.angularjs.org/guide/$location & https://scotch.io/tutorials/pretty-urls-in-angularjs-removing-the-hashtag
+  if(window.history && window.history.pushState){
+  $locationProvider.html5Mode({
+      enabled: true,
+      requireBase: false
+    });
+  }
 
 });
