@@ -14,39 +14,33 @@
  <link href="https://fonts.googleapis.com/css?family=New+Rocker" rel="stylesheet"> <!--rock-->
 
   <!-- This part is for the skelenton frame -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
+  <link rel="stylesheet" href="skeleton/normalize.css">
+  <link rel="stylesheet" href="skeleton/skeleton.css">
   <link href="styles.css" rel="stylesheet">
+
 </head>
 <body ng-app="musicMod">
 
     <header>
         <div class ="header">
-<h1>Fancy Youtube Generator</h1>
-
+          <h1>Fancy Youtube Generator</h1>
         </div> <!-- div is for header content -->
     </header>
 
-    <ng-view></ng-view>
+    <div class="bigView" ng-view></div>
 
       <footer>
-          <div class="wrapper">
-
-                  &copy; All rights reserved 2015
-
-              </ul>
-          </div>
+          <div class="wrapper">&copy; All rights reserved 2015</div>
     </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
 <script src='js/app.js'></script>
-<script src='js/mainCrtl.js'></script>
-<script src='js/rockCrtl.js'></script>
-<script src='js/rapCrtl.js'></script>
-<script src='js/popCrtl.js'></script>
-<script src='js/countryCrtl.js'></script>
+<script src='js/mainCtrl.js'></script>
+<script src='js/rockCtrl.js'></script>
+<script src='js/rapCtrl.js'></script>
+<script src='js/popCtrl.js'></script>
+<script src='js/countryCtrl.js'></script>
 <script src='js/ytFactory.js'></script>
 </body>
 </html>
