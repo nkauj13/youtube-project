@@ -1,1 +1,39 @@
 @import "variables";
+
+
+.wrapper{
+    background-color: $main-header;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.header {
+  background-color: $main-header;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+
+}
+
+.mainview{
+  background-color: $rock-body;
+
+}
+
+.main-description{
+  background-color: $rock-bodytwo;
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; 
+}
