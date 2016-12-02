@@ -9,7 +9,11 @@
 
 .header {
   background-color: #554250;
+<<<<<<< HEAD
   position: relative;
+=======
+  /*position: fixed;*/
+>>>>>>> 474cfd7b92d982cb00d2a5cc6afcbe4f05affe40
   right: 0;
   top: 0;
   left: 0;
@@ -18,6 +22,7 @@
   border-style: solid; }
 
 .main-description {
+<<<<<<< HEAD
   background-color: #519ca5;
   margin: 5% auto;
   padding: 1rem 1rem;
@@ -41,3 +46,29 @@
 
 .countryview {
   background-color: #704633; }
+=======
+  background-color: #7e7e7e;
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.bigView {
+  height: 100%;
+}
+
+.popview {
+  height: 100%;
+  background-color: #9EAD8A; }
+
+  .rockview {
+    height: 100%;
+    background-color: pink; }
+>>>>>>> 474cfd7b92d982cb00d2a5cc6afcbe4f05affe40
