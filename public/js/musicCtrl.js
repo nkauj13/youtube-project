@@ -1,21 +1,24 @@
 var app = angular.module('musicMod');
 
-app.controller('musicCtrl', function($scope){
-//app.controller('musicCtrl', function($scope, ytFactory){
+app.controller('musicCtrl', function($scope, $http, ytFactory){
 	
 /*
-	 - get yt data from the factory via ytFactory.getYTdata()
 	 - use data to set the YT video - drill down into the ytData object, store it in a variable on the $scope & put in the view with an expression
 	 - use data to make calls to lastFM api
 */
 
+//get YT data from the factory
+	var ytDataMusicCtrl = ytFactory.getYTdata();
+	console.log(ytDataMusicCtrl);
+	
 //set the youTube video:
 
-
+		$scope.videoID = ytDataMusicCtrl.info.items[0].id.videoId;
+		console.log($scope.videoID);
 
 
 //lastFM api:
-
+	
 	/*
 	PROBLEM - how to format the artist info data from YT for last FM: 
 	- we can trim off the VEVO from the results:
