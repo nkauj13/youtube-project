@@ -3,37 +3,53 @@
 
 .wrapper{
     background-color: $main-header;
-    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 1rem;
+    border-style: solid;
 
 }
 
 .header {
   background-color: $main-header;
-  position: fixed;
+  position: relative;
   right: 0;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1rem;
+  border-style: solid;
 
 }
 
-.mainview{
-  background-color: $rock-body;
-
-}
 
 .main-description{
-  background-color: $rock-bodytwo;
+  background-color: $main-bodytwo;
+  margin: 5% auto;
+  padding: 1rem 1rem;
+  padding-bottom: 5rem;
   position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; 
+  max-width: 50%;
+  height: 4rem;
+  border-style: solid;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.generator{
+  background-color: $main-bodytwo;
+  margin: 10% auto;
+  padding: 1rem 1rem;
+  padding-bottom: 10px;
+  position: relative;
+  max-width: 50%;
+  height: 15rem;
+  border-style: solid;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.countryview {
+  background-color: $country-body;
+
 }

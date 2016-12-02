@@ -1,29 +1,43 @@
 .wrapper {
   background-color: #554250;
-  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 1rem; }
+  padding: 1rem;
+  border-style: solid; }
 
 .header {
   background-color: #554250;
-  position: fixed;
+  position: relative;
   right: 0;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem; }
-
-.mainview {
-  background-color: #401841; }
+  padding: 1rem;
+  border-style: solid; }
 
 .main-description {
-  background-color: #811C4E;
+  background-color: #519ca5;
+  margin: 5% auto;
+  padding: 1rem 1rem;
+  padding-bottom: 5rem;
   position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
+  max-width: 50%;
+  height: 4rem;
+  border-style: solid;
+  box-shadow: 10px 10px 5px #888888; }
+
+.generator {
+  background-color: #519ca5;
+  margin: 10% auto;
+  padding: 1rem 1rem;
+  padding-bottom: 10px;
+  position: relative;
+  max-width: 50%;
+  height: 15rem;
+  border-style: solid;
+  box-shadow: 10px 10px 5px #888888; }
+
+.countryview {
+  background-color: #704633; }
