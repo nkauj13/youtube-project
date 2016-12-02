@@ -35,12 +35,12 @@ app.controller('mainCtrl', function($scope, $location, ytFactory){
 
 		//create YT query string from the user's choices:
 		var queryStringYT = year + ' ' + userGenre;
-	
+
 
 		//send the query string to the YT Factory via queryYT method (& trigger the YT API call):
 		ytFactory.queryYT(queryStringYT);
 
-	}
+	};
 
 
 });
