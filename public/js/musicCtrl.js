@@ -4,6 +4,18 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 
 	// Create a variable to store the returned videoID in
 	var stuff = ytFactory.getYTData();
+	var stuff2 = ytFactory.getYTData();
+
+	var idArray = [];
+
+	stuff2.items.forEach(function(vidID) {
+		var newVidId = vidID.id.videoId;
+		idArray.push(vidID.id.videoId);
+		console.log(newVidId);
+	});
+
+	console.log(idArray);
+
 	var youtubeStuff = stuff.items[0].id.videoId;
 	//console.log(stuff.items[0].id.videoId);
 
@@ -58,10 +70,10 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 				}
 				else {
 
-					$scope.albumArray = response.data.topalbums.album; 
+					$scope.albumArray = response.data.topalbums.album;
 				}
 
-	});			
+	});
 
 	$http.get('http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=' + lastFMQueryString + '&api_key=ccdf156dfa78f0a2462aa132687608f0&format=json')
 			.then(function successCallback(response){
@@ -75,7 +87,7 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 				}
 				else {
 
-					$scope.simArtistArray = response.data.similarartists.artist; 
+					$scope.simArtistArray = response.data.similarartists.artist;
 				}
 
 	});
