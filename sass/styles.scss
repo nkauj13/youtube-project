@@ -35,9 +35,13 @@
   height: 4rem;
   border-style: solid;
   box-shadow: 10px 10px 5px #888888;
+
 }
 
-<<<<<<< HEAD
+.mainview {
+  background-color: $main-body;
+}
+
 .generator{
   background-color: $main-bodytwo;
   margin: 10% auto;
@@ -52,23 +56,12 @@
 
 .countryview {
   background-color: $country-body;
-
-=======
-.main-description{
-  background-color: $rap-bodytwo;
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
-.popview{
+.popview {
   background-color: $pop-body;
 }
 
-.rockview{
-  background-color: rock-body
->>>>>>> 474cfd7b92d982cb00d2a5cc6afcbe4f05affe40
+.rockview {
+  background-color: $rock-body;
 }
