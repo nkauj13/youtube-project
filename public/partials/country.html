@@ -12,21 +12,26 @@
   </div>
 
   <!-- artist bio -->
+<<<<<<< HEAD
   <div class="artistBio" id="countryBio">
     <p>Test Bio</p>
+=======
+  <div class="artistBio">
+    <p>{{artistBio}}</p>
+>>>>>>> b5ed73667c1627699b49b2377df40e20be6a22db
   </div>
 
- <!-- top albums -->
+  <!-- top albums -->
   <div class="topAlbums">
     <ul>
-      <li></li>
+      <li ng-repeat="album in albumArray | limitTo:25">{{album.name}}</li>
     </ul>
   </div>
 
   <!-- similar artist -->
   <div class="similarArtist">
     <ul>
-      <li></li>
+      <li ng-repeat="simArtist in simArtistArray | limitTo:25">{{simArtist.name}}</li>
     </ul>
   </div>
 </section>

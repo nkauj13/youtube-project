@@ -17,8 +17,8 @@ app.factory('ytFactory', function($http) {
       })
         .then(function successCallback(response) {
         ytData = response.data;
-        console.log(ytData);
-        console.log('Factory grabbed: ' + ytData);
+        //console.log(ytData);
+        //console.log('Factory grabbed: ' + ytData);
         return ytData;
       });
     },
