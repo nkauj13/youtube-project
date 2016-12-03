@@ -1,6 +1,6 @@
-var app = angular.module('musicMod', ['ngRoute']);
+var app = angular.module('musicMod', ['ngRoute', 'ngYoutubeEmbed']);
 
-app.config(function($routeProvider){
+app.config(function($routeProvider, $locationProvider){
 
   $routeProvider
   .when('/', {
@@ -9,22 +9,32 @@ app.config(function($routeProvider){
   })
 
   .when('/rock', {
-    controller: 'rockCtrl',
+    controller: 'musicCtrl',
     templateUrl: '../partials/rock.html'
   })
 
   .when('/pop', {
-    controller: 'popCtrl',
+    controller: 'musicCtrl',
     templateUrl: '../partials/pop.html'
   })
 
   .when('/country', {
-    controller: 'countryCtrl',
+    controller: 'musicCtrl',
     templateUrl: '../partials/country.html'
   })
 
   .when('/rap', {
-    controller: 'rapCtrl',
+    controller: 'musicCtrl',
     templateUrl: '../partials/rap.html'
+
   });
+
+  //configure the $location service:
+  if(window.history && window.history.pushState){
+  $locationProvider.html5Mode({
+      enabled: true,
+      requireBase: false
+    });
+  }
+
 });

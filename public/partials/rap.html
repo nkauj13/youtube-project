@@ -1,27 +1,33 @@
 <section class="rapview">
+  <h1>Rap</h1>
 
-  <div class="videorap"></div> <!-- YouTube video -->
-
-  <div class="biorap"> <!-- artist bio -->
-
-    <p></p>
-
+  <!-- YouTube video -->
+  <div class="videorap">
+    <ng-youtube-embed
+        url="link"
+        autoplay="true"
+        color="white"
+        disablekb="true"
+        end="20">
+    </ng-youtube-embed>
   </div>
 
-  <div class="topalbumsrap"> <!-- top albums -->
+  <!-- artist bio -->
+  <div class="biorap">
+    <p>Test Bio</p>
+  </div>
 
+  <!-- top albums -->
+  <div class="topalbumsrap">
     <ul>
       <li></li>
     </ul>
-
   </div>
 
-  <div class="simartistrap"> <!-- similar artist -->
-
+  <!-- similar artist -->
+  <div class="simartistrap">
     <ul>
       <li></li>
     </ul>
-
   </div>
-
 </section>
