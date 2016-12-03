@@ -48,8 +48,18 @@
     text-align: center;
     padding: .5rem; }
 
+html, body {
+  height: 100%;
+  width: 100%; }
+
+.bigview {
+  height: 100%;
+  width: 100%; }
+
 .popview {
   background-color: #9EAD8A; }
 
 .rockview {
-  background-color: #401841; }
+  background-color: #401841;
+  height: auto;
+  width: auto; }

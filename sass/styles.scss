@@ -64,10 +64,21 @@
     }
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.bigview{
+  height: 100%;
+  width: 100%;
+}
 .popview {
   background-color: $pop-body;
 }
 
 .rockview {
   background-color: $rock-body;
+  height: auto;
+  width: auto;
 }
