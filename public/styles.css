@@ -57,6 +57,10 @@ html, body {
     font-family: sans-serif;
     padding: 2rem; }
 
+.video {
+  margin: 4% auto;
+  text-align: center; }
+
 .artistBio {
   background-color: #cbd8de;
   margin: 10% auto;
