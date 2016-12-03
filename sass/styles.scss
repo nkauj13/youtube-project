@@ -1,5 +1,5 @@
 @import "variables";
-
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 .wrapper{
     background-color: $main-header;
@@ -57,9 +57,11 @@
 
 .countryview {
   background-color: $country-body;
-  p {
-    font-style: Pacifico;
-  }
+  h1 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    padding: .5rem
+    }
 }
 
 .popview {
