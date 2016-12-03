@@ -5,7 +5,8 @@
   left: 0;
   width: 100%;
   padding: 1rem;
-  border-style: solid; }
+  border-style: solid;
+  position: absolute; }
 
 .header {
   background-color: #554250;
@@ -28,9 +29,6 @@
   border-style: solid;
   box-shadow: 10px 10px 5px #888888; }
 
-.mainview {
-  background-color: #37486D; }
-
 .generator {
   background-color: #519ca5;
   margin: 10% auto;
@@ -44,6 +42,8 @@
 
 .countryview {
   background-color: #704633; }
+  .countryview p {
+    font-style: Pacifico; }
 
 .popview {
   background-color: #9EAD8A; }

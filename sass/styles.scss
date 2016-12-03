@@ -9,6 +9,7 @@
     width: 100%;
     padding: 1rem;
     border-style: solid;
+    position: absolute;
 
 }
 
@@ -38,9 +39,9 @@
 
 }
 
-.mainview {
-  background-color: $main-body;
-}
+// .mainview {
+//   background-color: $main-body;
+// }
 
 .generator{
   background-color: $main-bodytwo;
@@ -56,6 +57,9 @@
 
 .countryview {
   background-color: $country-body;
+  p {
+    font-style: Pacifico;
+  }
 }
 
 .popview {
