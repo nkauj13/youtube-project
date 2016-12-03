@@ -4,15 +4,32 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 
 	// Create a variable to store the returned videoID in
 	var stuff = ytFactory.getYTData();
-	var youtubeStuff = stuff.items[0].id.videoId;
+	var stuff2 = ytFactory.getYTData();
+
+	var ytArray =[];
+
+	stuff2.items.forEach(function(vidData) {
+		var newData =
+			{
+			vidID: vidData.id.videoId,
+			title: vidData.snippet.channelTitle
+		};
+		ytArray.push(newData);
+		// ytArray.push(vidID.snippet.channelTitle);
+		console.log(newData);
+	});
+
+	console.log(ytArray);
+
+	var youtubeStuff = ytArray[Math.floor(Math.random()*ytArray.length)];
 	//console.log(stuff.items[0].id.videoId);
 
 	// YouTube Embed
-	$scope.link = 'https://www.youtube.com/watch?v=' + youtubeStuff;
+	$scope.link = 'https://www.youtube.com/watch?v=' + youtubeStuff.vidID;
 
 //lastFM
 	//format YT data for LastFM API:
-	var ytChannelData = stuff.items[0].snippet.channelTitle;
+	var ytChannelData = youtubeStuff.title;
 	console.log(ytChannelData);
 
 	var formattedYTString = ytChannelData.substr(0, ytChannelData.length-4);
@@ -30,12 +47,10 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 	$http.get('http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' +lastFMQueryString+ '&api_key=ccdf156dfa78f0a2462aa132687608f0&format=json')
 			.then(function successCallback(response){
 
-				//console.log(response.data.artist.bio.content);
+				//console.log(response.data);
 				//console.log($scope.artistBio);
 
-				//console.log(response.data.artist.bio.content);
-
-				if(!response.data.artist.bio.content) {
+				if(response.data.message === "The artist you supplied could not be found") {
 
 					$scope.artistBio = "Sorry, we could not find the artist's bio";
 				}
@@ -52,16 +67,19 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 				//console.log(response.data.topalbums);
 				//console.log($scope.albumArray);
 
-				if(!response.data.topalbums.album) {
+				console.log(response.data);
 
-					$scope.albumArray = "Sorry, we could not find any top albums";
+				if(response.data.message === "The artist you supplied could not be found") {
+
+					$scope.albumArray = ['Sorry, we could not find any top albums'];
+					console.log($scope.albumArray);
 				}
 				else {
 
-					$scope.albumArray = response.data.topalbums.album; 
+					$scope.albumArray = response.data.topalbums.album;
 				}
 
-	});			
+	});
 
 	$http.get('http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=' + lastFMQueryString + '&api_key=ccdf156dfa78f0a2462aa132687608f0&format=json')
 			.then(function successCallback(response){
@@ -69,13 +87,13 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 				//console.log(response.data);
 				//console.log($scope.simArtistArray);
 
-				if(!response.data.similarartists.artist) {
+				if(response.data.message === "The artist you supplied could not be found") {
 
 					$scope.simArtistArray = "Sorry, we could not find similar artists";
 				}
 				else {
 
-					$scope.simArtistArray = response.data.similarartists.artist; 
+					$scope.simArtistArray = response.data.similarartists.artist;
 				}
 
 	});
