@@ -99,6 +99,15 @@ html, body {
   border-style: solid;
 }
 
+.similarArtist {
+  background-color: $country-bodytwo;
+  margin: 10% auto;
+  padding: 1rem 1rem;
+  position: relative;
+  max-width: 50%;
+  border-style: solid;
+}
+
 .popview {
   background-color: $pop-body;
 }
