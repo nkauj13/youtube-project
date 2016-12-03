@@ -19,7 +19,6 @@ html, body {
     width: 100%;
     padding: 1rem;
     border-style: solid;
-
 }
 
 .header {
@@ -37,7 +36,6 @@ html, body {
 
 }
 
-
 .main-description{
   background-color: $main-bodytwo;
   margin: 5% auto;
@@ -49,9 +47,11 @@ html, body {
   border-style: solid;
 }
 
-// .mainview {
-//   background-color: $main-body;
-// }
+.mainview {
+  background-color: $main-body;
+  height: auto;
+  width: auto;
+}
 
 .generator{
   background-color: $main-bodytwo;
@@ -70,10 +70,26 @@ html, body {
     text-align: center;
     padding: 2rem;
     }
-  p {
-    font-family: sans-serif;
+}
+
+.popview {
+  background-color: $pop-body;
+  h1 {
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
     padding: 2rem;
-  }
+    }
+}
+
+.rockview {
+  background-color: $rock-body;
+  height: auto;
+  width: auto;
+  h1 {
+    font-family: 'New Rocker', cursive;
+    text-align: center;
+    padding: 2rem;
+    }
 }
 
 .video{
@@ -83,11 +99,20 @@ html, body {
 
 .artistBio {
   background-color: $country-bodytwo;
+  font-style:
   margin: 10% auto;
   // padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
+  height: 15rem;
   border-style: solid;
+}
+
+#countryBio{
+  p {
+    font-family: sans-serif;
+    padding: 2rem;
+  }
 }
 
 .topAlbums {
@@ -96,24 +121,6 @@ html, body {
   padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
+  height: 15rem;
   border-style: solid;
-}
-
-.similarArtist {
-  background-color: $country-bodytwo;
-  margin: 10% auto;
-  padding: 1rem 1rem;
-  position: relative;
-  max-width: 50%;
-  border-style: solid;
-}
-
-.popview {
-  background-color: $pop-body;
-}
-
-.rockview {
-  background-color: $rock-body;
-  height: auto;
-  width: auto;
 }
