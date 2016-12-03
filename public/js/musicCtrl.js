@@ -6,25 +6,30 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 	var stuff = ytFactory.getYTData();
 	var stuff2 = ytFactory.getYTData();
 
-	var idArray = [];
+	var ytArray =[];
 
-	stuff2.items.forEach(function(vidID) {
-		var newVidId = vidID.id.videoId;
-		idArray.push(vidID.id.videoId);
-		console.log(newVidId);
+	stuff2.items.forEach(function(vidData) {
+		var newData =
+			{
+			vidID: vidData.id.videoId,
+			title: vidData.snippet.channelTitle
+		};
+		ytArray.push(newData);
+		// ytArray.push(vidID.snippet.channelTitle);
+		console.log(newData);
 	});
 
-	console.log(idArray);
+	console.log(ytArray);
 
-	var youtubeStuff = stuff.items[0].id.videoId;
+	var youtubeStuff = ytArray[Math.floor(Math.random()*ytArray.length)];
 	//console.log(stuff.items[0].id.videoId);
 
 	// YouTube Embed
-	$scope.link = 'https://www.youtube.com/watch?v=' + youtubeStuff;
+	$scope.link = 'https://www.youtube.com/watch?v=' + youtubeStuff.vidID;
 
 //lastFM
 	//format YT data for LastFM API:
-	var ytChannelData = stuff.items[0].snippet.channelTitle;
+	var ytChannelData = youtubeStuff.title;
 	console.log(ytChannelData);
 
 	var formattedYTString = ytChannelData.substr(0, ytChannelData.length-4);
