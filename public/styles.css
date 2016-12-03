@@ -54,13 +54,9 @@ html, body {
   .countryview p {
     font-family: sans-serif; }
 
-html, body {
-  height: 100%;
-  width: 100%; }
-
-.bigview {
-  height: 100%;
-  width: 100%; }
+.video {
+  margin: 4% auto;
+  text-align: center; }
 
 .artistBio {
   background-color: #cbd8de;
