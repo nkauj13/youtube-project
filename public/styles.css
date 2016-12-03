@@ -76,6 +76,14 @@ html, body {
   max-width: 50%;
   border-style: solid; }
 
+.similarArtist {
+  background-color: #cbd8de;
+  margin: 10% auto;
+  padding: 1rem 1rem;
+  position: relative;
+  max-width: 50%;
+  border-style: solid; }
+
 .popview {
   background-color: #9EAD8A; }
 
