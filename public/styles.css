@@ -6,8 +6,7 @@
   left: 0;
   width: 100%;
   padding: 1rem;
-  border-style: solid;
-  position: absolute; }
+  border-style: solid; }
 
 .header {
   background-color: #554250;
@@ -28,7 +27,7 @@
   max-width: 50%;
   height: 4rem;
   border-style: solid;
-  box-shadow: 10px 10px 5px #888888; }
+  box-shadow: 10px 10px 5px; }
 
 .generator {
   background-color: #519ca5;
@@ -39,7 +38,7 @@
   max-width: 50%;
   height: 15rem;
   border-style: solid;
-  box-shadow: 10px 10px 5px #888888; }
+  box-shadow: 10px 10px 5px; }
 
 .countryview {
   background-color: #704633; }
@@ -47,6 +46,28 @@
     font-family: 'Pacifico', cursive;
     text-align: center;
     padding: .5rem; }
+
+.biocountry {
+  background-color: #cbd8de;
+  margin: 10% auto;
+  padding: 1rem 1rem;
+  padding-bottom: 5px;
+  position: relative;
+  max-width: 50%;
+  height: 15rem;
+  border-style: solid;
+  box-shadow: 10px 10px 5px; }
+
+.topalbumscountry {
+  background-color: #cbd8de;
+  margin: 10% auto;
+  padding: 1rem 1rem;
+  padding-bottom: 5px;
+  position: relative;
+  max-width: 50%;
+  height: 15rem;
+  border-style: solid;
+  box-shadow: 10px 10px 5px; }
 
 .popview {
   background-color: #9EAD8A; }
