@@ -5,27 +5,10 @@ app.controller('mainCtrl', function($scope, $location, $timeout, ytFactory){
 	// arrays for populating select options:
 	$scope.yearArray = [];
 	$scope.genreArray = [
-		'Acoustic',
-		'Alternative & Punk',
-		'Blues',
-		'Classical',
-		'Country & Folk',
-		'Dance & Electronic',
-		'Easy Listening',
-		'Gospel & Religious',
-		'Hip Hop & Rap',
-		'Holiday',
-		'Instrumental',
-		'Jazz',
-		'Latin',
-		'Metal',
-		'Moods',
-		'Other',
-		'Pop',
-		'R&B',
+		'Country',
+		'Rap',
 		'Rock',
-		'Soundtrack',
-		'World'
+		'Pop',
 	];
 
 	// loops through years from 1990-2016
