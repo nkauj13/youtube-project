@@ -3,35 +3,32 @@ var app = angular.module('musicMod');
 
 app.factory('ytFactory', function($http) {
 
-  var ytData = {};
+  // Create a variable to "store" the response in!
+  var ytData;
 
-  queryYT = function(query) {
-    return {
-
-      $http
-        .get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=' + query + 'VEVO&type=video&key=AIzaSyBIupTaipxwn9WorBosS7NqGyn7tNMMkQM').then(function successCallback(response) {
-          ytData.data = response;
-          return ytData;
-      })
-
-      // $http.get("https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=" +query+ "VEVO&type=video&key=AIzaSyBIupTaipxwn9WorBosS7NqGyn7tNMMkQM").then(function successCallback(response) {
-      //   ytData.data = response.data;
-      //
-      //   return ytData;
-      // })
-
-    };
-
-  };
-
-  // getYTdata = function() {
-  //   console.log("called the getYTdata function");
-  //   return ytData;
-  // };
-
+  // Factories return objects...soo...we return two functions!
   return {
-    queryYT: queryYT
-    // getYTdata: getYTdata
-  };
+
+    // This function makes the API call and stores the response in ytData from line 6
+    queryYT: function(query) {
+      $http({
+        method: "GET",
+        url: "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=" + query + "VEVO&type=video&key=AIzaSyBIupTaipxwn9WorBosS7NqGyn7tNMMkQM"
+      })
+        .then(function successCallback(response) {
+        ytData = response.data
+        console.log(ytData);
+        console.log('Factory grabbed: ' + ytData);
+        return ytData;
+      })
+    },
+
+    // This function returns the ytData variable to the musicCtrl!
+    getYTData: function() {
+      console.log('Grabbing data from factory');
+      return ytData;
+    }
+
+  }
 
 });

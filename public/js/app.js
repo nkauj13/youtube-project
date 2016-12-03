@@ -1,4 +1,4 @@
-var app = angular.module('musicMod', ['ngRoute']);
+var app = angular.module('musicMod', ['ngRoute', 'ngYoutubeEmbed']);
 
 app.config(function($routeProvider, $locationProvider){
 
