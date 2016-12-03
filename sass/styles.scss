@@ -9,6 +9,7 @@ html, body {
 .bigview{
   height: 100%;
   width: 100%;
+  padding: 1rem 1 rem;
 }
 
 .footer{
@@ -19,6 +20,7 @@ html, body {
     width: 100%;
     padding: 1rem;
     border-style: solid;
+    position: static;
 
 }
 
@@ -40,7 +42,7 @@ html, body {
 
 .main-description{
   background-color: $main-bodytwo;
-  margin: 5% auto;
+  margin: 0 auto;
   padding: 1rem 1rem;
   padding-bottom: 5rem;
   position: relative;
@@ -49,13 +51,14 @@ html, body {
   border-style: solid;
 }
 
-// .mainview {
-//   background-color: $main-body;
-// }
+.mainview {
+  background-color: $main-body;
+  padding: 2rem 2rem ;
+}
 
 .generator{
   background-color: $main-bodytwo;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 1rem 1rem;
   padding-bottom: 10px;
   position: relative;
@@ -65,6 +68,7 @@ html, body {
 
 .countryview {
   background-color: $country-body;
+  padding: 1rem 1rem;
   h1 {
     font-family: 'Pacifico', cursive;
     text-align: center;
@@ -83,7 +87,7 @@ html, body {
 
 .artistBio {
   background-color: $country-bodytwo;
-  margin: 10% auto;
+  margin: 5% auto;
   // padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
@@ -92,7 +96,7 @@ html, body {
 
 .topAlbums {
   background-color: $country-bodytwo;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
@@ -101,7 +105,7 @@ html, body {
 
 .similarArtist {
   background-color: $country-bodytwo;
-  margin: 10% auto;
+  margin: 0 auto;
   padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
