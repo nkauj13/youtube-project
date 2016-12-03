@@ -1,5 +1,8 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=New+Rocker" rel="stylesheet');
 
 .wrapper{
     background-color: $main-header;
@@ -62,9 +65,11 @@
     text-align: center;
     padding: .5rem
     }
+  p {
+    font-family: sans-serif;
+  }
 }
 
-<<<<<<< HEAD
 html, body {
   height: 100%;
   width: 100%;
@@ -74,7 +79,7 @@ html, body {
   height: 100%;
   width: 100%;
 }
-=======
+
 .biocountry {
   background-color: $country-bodytwo;
   margin: 10% auto;
@@ -99,7 +104,6 @@ html, body {
   box-shadow: 10px 10px 5px
 }
 
->>>>>>> b4531aa6cfdab8837b7a6295229b45f21b4d4834
 .popview {
   background-color: $pop-body;
 }

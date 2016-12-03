@@ -1,16 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 @import url("https://fonts.googleapis.com/css?family=Rock+Salt");
 @import url("https://fonts.googleapis.com/css?family=Lobster");
-@import url("https://fonts.googleapis.com/css?family=New+Rocker");
-
-html, body {
-  height: 100%;
-  width: 100%; }
-
-.bigview {
-  height: 100%;
-  width: 100%; }
-
+@import url('https://fonts.googleapis.com/css?family=New+Rocker" rel="stylesheet');
 .wrapper {
   background-color: #554250;
   right: 0;
@@ -58,6 +49,16 @@ html, body {
     font-family: 'Pacifico', cursive;
     text-align: center;
     padding: .5rem; }
+  .countryview p {
+    font-family: sans-serif; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+.bigview {
+  height: 100%;
+  width: 100%; }
 
 .biocountry {
   background-color: #cbd8de;
