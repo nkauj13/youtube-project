@@ -11,7 +11,7 @@ html, body {
   width: 100%;
 }
 
-.wrapper{
+.footer{
     background-color: $main-header;
     right: 0;
     bottom: 0;
@@ -31,6 +31,9 @@ html, body {
   width: 100%;
   padding: 1rem;
   border-style: solid;
+  h1 {
+    font-family: 'Bungee Inline', cursive;
+  }
 
 }
 
@@ -57,7 +60,6 @@ html, body {
   padding-bottom: 10px;
   position: relative;
   max-width: 50%;
-  // height: 15rem;
   border-style: solid;
 }
 
@@ -66,28 +68,18 @@ html, body {
   h1 {
     font-family: 'Pacifico', cursive;
     text-align: center;
-    padding: 2rem
+    padding: 2rem;
     }
   p {
     font-family: sans-serif;
+    padding: 2rem;
   }
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
-.bigview{
-  height: 100%;
-  width: 100%;
 }
 
 .artistBio {
   background-color: $country-bodytwo;
   margin: 10% auto;
-  padding: 1rem 1rem;
-  padding-bottom: 5px;
+  // padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
   height: 15rem;
@@ -98,7 +90,6 @@ html, body {
   background-color: $country-bodytwo;
   margin: 10% auto;
   padding: 1rem 1rem;
-  padding-bottom: 5px;
   position: relative;
   max-width: 50%;
   height: 15rem;
