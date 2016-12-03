@@ -9,7 +9,7 @@
     width: 100%;
     padding: 1rem;
     border-style: solid;
-    position: absolute;
+
 
 }
 
@@ -35,7 +35,7 @@
   max-width: 50%;
   height: 4rem;
   border-style: solid;
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px;
 
 }
 
@@ -52,7 +52,7 @@
   max-width: 50%;
   height: 15rem;
   border-style: solid;
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px;
 }
 
 .countryview {
@@ -64,6 +64,7 @@
     }
 }
 
+<<<<<<< HEAD
 html, body {
   height: 100%;
   width: 100%;
@@ -73,6 +74,32 @@ html, body {
   height: 100%;
   width: 100%;
 }
+=======
+.biocountry {
+  background-color: $country-bodytwo;
+  margin: 10% auto;
+  padding: 1rem 1rem;
+  padding-bottom: 5px;
+  position: relative;
+  max-width: 50%;
+  height: 15rem;
+  border-style: solid;
+  box-shadow: 10px 10px 5px
+}
+
+.topalbumscountry {
+  background-color: $country-bodytwo;
+  margin: 10% auto;
+  padding: 1rem 1rem;
+  padding-bottom: 5px;
+  position: relative;
+  max-width: 50%;
+  height: 15rem;
+  border-style: solid;
+  box-shadow: 10px 10px 5px
+}
+
+>>>>>>> b4531aa6cfdab8837b7a6295229b45f21b4d4834
 .popview {
   background-color: $pop-body;
 }
