@@ -72,15 +72,21 @@ html, body {
     text-align: center;
     padding: 2rem;
   }
+  div {
+    background-color: $country-bodytwo;
+  }
 }
 
 .popview {
   background-color: $pop-body;
   padding: 1rem 1rem;
   h1 {
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Lobster', cursive;
     text-align: center;
     padding: 2rem;
+  }
+  div {
+    background-color: $pop-bodytwo;
   }
 }
 
@@ -93,6 +99,9 @@ html, body {
     text-align: center;
     padding: 2rem;
   }
+  div {
+    background-color: $rock-bodytwo;
+  }
 }
 
 .rapview {
@@ -103,15 +112,22 @@ html, body {
     text-align: center;
     padding: 2rem;
   }
+  div {
+    background-color: $rap-bodytwo;
+  }
 }
 
 .video{
-  margin: 4% auto;
+  margin: 5% auto;
   text-align: center;
+  padding: 1rem 1rem;
+  position: relative;
+  max-width: 50%;
+  border-style: solid;
 }
 
 .artistBio {
-  background-color: $country-bodytwo;
+  // background-color: $country-bodytwo;
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
@@ -120,7 +136,7 @@ html, body {
 }
 
 .topAlbums {
-  background-color: $country-bodytwo;
+  // background-color: $country-bodytwo;
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
@@ -136,7 +152,7 @@ html, body {
 }
 
 .topAlbums {
-  background-color: $country-bodytwo;
+  // background-color: $country-bodytwo;
   margin: 0 auto;
   padding: 1rem 1rem;
   position: relative;
@@ -145,7 +161,7 @@ html, body {
 }
 
 .similarArtist {
-  background-color: $country-bodytwo;
+  // background-color: $country-bodytwo;
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
