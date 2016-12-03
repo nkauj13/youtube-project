@@ -52,17 +52,17 @@
                     var match = link.match(q);
                     var id = link.match(p);
 
-                    if (id != null) {
+                    if (id !== null) {
                         var ytId = id[1];
                         return ytId;
                     }
                 }
 
-                if (link != undefined) {
+                if (link !== undefined) {
 
                     // Detecting playlist and fetching video ids
                     $scope.playlistArray = [];
-                    if ($scope.playlist != undefined) {
+                    if ($scope.playlist !== undefined) {
                         var playlistArray = $scope.playlist.split(',');
                         for (var i = 0; i < playlistArray.length; i++) {
                             $scope.playlistArray.push(fetchId(playlistArray[i])); // Scope variable to store playlist ids
@@ -94,8 +94,8 @@
                     // Please use this link to view all available youtube player parameters - https://developers.google.com/youtube/player_parameters
 
                     // Setting default width and height if not provided
-                    $scope.width != undefined ? width = $scope.width : width = '500px';
-                    $scope.height != undefined ? height = $scope.height : height = '350px';
+                    $scope.width !== undefined ? width = $scope.width : width = '500px';
+                    $scope.height !== undefined ? height = $scope.height : height = '350px';
 
                     // Update iframe when url attribute changes
                     $scope.$watch('url', function(newVal) {
@@ -118,6 +118,6 @@
                     });
                 }
             }]
-        }
+        };
     }]);
 })();
