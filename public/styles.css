@@ -5,7 +5,8 @@ html, body {
 
 .bigview {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  padding: 1rem 1 rem; }
 
 .footer {
   background-color: #554250;
@@ -30,7 +31,7 @@ html, body {
 
 .main-description {
   background-color: #519ca5;
-  margin: 5% auto;
+  margin: 0 auto;
   padding: 1rem 1rem;
   padding-bottom: 5rem;
   position: relative;
@@ -38,9 +39,15 @@ html, body {
   height: 4rem;
   border-style: solid; }
 
+.mainview {
+  background-color: #37486D;
+  padding: 2rem 2rem;
+  height: auto;
+  width: auto; }
+
 .generator {
   background-color: #519ca5;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 1rem 1rem;
   padding-bottom: 10px;
   position: relative;
@@ -48,13 +55,36 @@ html, body {
   border-style: solid; }
 
 .countryview {
-  background-color: #704633; }
+  background-color: #704633;
+  padding: 1rem 1rem; }
   .countryview h1 {
     font-family: 'Pacifico', cursive;
     text-align: center;
     padding: 2rem; }
-  .countryview p {
-    font-family: sans-serif;
+
+.popview {
+  background-color: #9EAD8A;
+  padding: 1rem 1rem; }
+  .popview h1 {
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    padding: 2rem; }
+
+.rockview {
+  background-color: #401841;
+  padding: 1rem 1rem;
+  width: auto; }
+  .rockview h1 {
+    font-family: 'New Rocker', cursive;
+    text-align: center;
+    padding: 2rem; }
+
+.rapview {
+  background-color: #990000;
+  padding: 1rem 1rem; }
+  .rapview h1 {
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
     padding: 2rem; }
 
 .video {
@@ -63,14 +93,27 @@ html, body {
 
 .artistBio {
   background-color: #cbd8de;
-  margin: 10% auto;
+  margin: 5% auto;
+  padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
   border-style: solid; }
 
 .topAlbums {
   background-color: #cbd8de;
-  margin: 10% auto;
+  margin: 5% auto;
+  padding: 1rem 1rem;
+  position: relative;
+  max-width: 50%;
+  border-style: solid; }
+
+#countryBio p {
+  font-family: sans-serif;
+  padding: 2rem; }
+
+.topAlbums {
+  background-color: #cbd8de;
+  margin: 0 auto;
   padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
@@ -78,16 +121,8 @@ html, body {
 
 .similarArtist {
   background-color: #cbd8de;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
   border-style: solid; }
-
-.popview {
-  background-color: #9EAD8A; }
-
-.rockview {
-  background-color: #401841;
-  height: auto;
-  width: auto; }
