@@ -6,15 +6,19 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 	var stuff = ytFactory.getYTData();
 	var stuff2 = ytFactory.getYTData();
 
-	var idArray = [];
+	var ytObj = {};
 
-	stuff2.items.forEach(function(vidID) {
-		var newVidId = vidID.id.videoId;
-		idArray.push(vidID.id.videoId);
-		console.log(newVidId);
+	stuff2.items.forEach(function(vidID, title) {
+		var newData = [
+			{vidID: vidID.id.videoId,
+				title: title.snippet.channelTitle}
+			];
+		ytObj.push(vidID.id.videoId);
+		ytobj.push(title.snippet.channelTitle);
+		console.log(newData);
 	});
 
-	console.log(idArray);
+	console.log(ytObj);
 
 	var youtubeStuff = stuff.items[0].id.videoId;
 	//console.log(stuff.items[0].id.videoId);
