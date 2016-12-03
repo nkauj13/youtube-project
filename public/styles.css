@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Rock+Salt");
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 @import url('https://fonts.googleapis.com/css?family=New+Rocker" rel="stylesheet');
+html, body {
+  height: 100%;
+  width: 100%; }
+
+.bigview {
+  height: 100%;
+  width: 100%; }
+
 .wrapper {
   background-color: #554250;
   right: 0;
@@ -29,8 +37,7 @@
   position: relative;
   max-width: 50%;
   height: 4rem;
-  border-style: solid;
-  box-shadow: 10px 10px 5px; }
+  border-style: solid; }
 
 .generator {
   background-color: #519ca5;
@@ -39,16 +46,14 @@
   padding-bottom: 10px;
   position: relative;
   max-width: 50%;
-  height: 15rem;
-  border-style: solid;
-  box-shadow: 10px 10px 5px; }
+  border-style: solid; }
 
 .countryview {
   background-color: #704633; }
   .countryview h1 {
     font-family: 'Pacifico', cursive;
     text-align: center;
-    padding: .5rem; }
+    padding: 2rem; }
   .countryview p {
     font-family: sans-serif; }
 
@@ -60,7 +65,7 @@ html, body {
   height: 100%;
   width: 100%; }
 
-.biocountry {
+.artistBio {
   background-color: #cbd8de;
   margin: 10% auto;
   padding: 1rem 1rem;
@@ -68,10 +73,9 @@ html, body {
   position: relative;
   max-width: 50%;
   height: 15rem;
-  border-style: solid;
-  box-shadow: 10px 10px 5px; }
+  border-style: solid; }
 
-.topalbumscountry {
+.topAlbums {
   background-color: #cbd8de;
   margin: 10% auto;
   padding: 1rem 1rem;
@@ -79,8 +83,7 @@ html, body {
   position: relative;
   max-width: 50%;
   height: 15rem;
-  border-style: solid;
-  box-shadow: 10px 10px 5px; }
+  border-style: solid; }
 
 .popview {
   background-color: #9EAD8A; }
