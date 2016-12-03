@@ -5,10 +5,10 @@ app.controller('mainCtrl', function($scope, $location, $timeout, ytFactory){
 	// arrays for populating select options:
 	$scope.yearArray = [];
 	$scope.genreArray = [
-		'Country',
-		'Rap',
-		'Rock',
-		'Pop',
+		'country',
+		'rap',
+		'rock',
+		'pop',
 	];
 
 	// loops through years from 1990-2016
