@@ -9,6 +9,7 @@ html, body {
 .bigview{
   height: 100%;
   width: 100%;
+  padding: 1rem 1 rem;
 }
 
 .footer{
@@ -19,7 +20,6 @@ html, body {
     width: 100%;
     padding: 1rem;
     border-style: solid;
-
 }
 
 .header {
@@ -32,15 +32,13 @@ html, body {
   padding: 1rem;
   border-style: solid;
   h1 {
-    font-family: 'Bungee Inline', cursive;
-  }
+    font-family: 'Bungee Inline', cursive;}
 
 }
 
-
 .main-description{
   background-color: $main-bodytwo;
-  margin: 5% auto;
+  margin: 0 auto;
   padding: 1rem 1rem;
   padding-bottom: 5rem;
   position: relative;
@@ -49,13 +47,16 @@ html, body {
   border-style: solid;
 }
 
-// .mainview {
-//   background-color: $main-body;
-// }
+.mainview {
+  background-color: $main-body;
+  padding: 2rem 2rem ;
+  height: auto;
+  width: auto;
+}
 
 .generator{
   background-color: $main-bodytwo;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 1rem 1rem;
   padding-bottom: 10px;
   position: relative;
@@ -65,13 +66,41 @@ html, body {
 
 .countryview {
   background-color: $country-body;
+  padding: 1rem 1rem;
   h1 {
     font-family: 'Pacifico', cursive;
     text-align: center;
     padding: 2rem;
-    }
-  p {
-    font-family: sans-serif;
+  }
+}
+
+.popview {
+  background-color: $pop-body;
+  padding: 1rem 1rem;
+  h1 {
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+.rockview {
+  background-color: $rock-body;
+  padding: 1rem 1rem;
+  width: auto;
+  h1 {
+    font-family: 'New Rocker', cursive;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+.rapview {
+  background-color: $rap-body;
+  padding: 1rem 1rem;
+  h1 {
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
     padding: 2rem;
   }
 }
@@ -83,8 +112,8 @@ html, body {
 
 .artistBio {
   background-color: $country-bodytwo;
-  margin: 10% auto;
-  // padding: 1rem 1rem;
+  margin: 5% auto;
+  padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
   border-style: solid;
@@ -92,7 +121,23 @@ html, body {
 
 .topAlbums {
   background-color: $country-bodytwo;
-  margin: 10% auto;
+  margin: 5% auto;
+  padding: 1rem 1rem;
+  position: relative;
+  max-width: 50%;
+  border-style: solid;
+}
+
+#countryBio{
+  p {
+    font-family: sans-serif;
+    padding: 2rem;
+  }
+}
+
+.topAlbums {
+  background-color: $country-bodytwo;
+  margin: 0 auto;
   padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
@@ -101,19 +146,9 @@ html, body {
 
 .similarArtist {
   background-color: $country-bodytwo;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
   border-style: solid;
-}
-
-.popview {
-  background-color: $pop-body;
-}
-
-.rockview {
-  background-color: $rock-body;
-  height: auto;
-  width: auto;
 }
