@@ -1,6 +1,16 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.bigview{
+  height: 100%;
+  width: 100%;
+}
+
 .wrapper{
     background-color: $main-header;
     right: 0;
@@ -9,7 +19,6 @@
     width: 100%;
     padding: 1rem;
     border-style: solid;
-
 
 }
 
@@ -64,18 +73,7 @@
     }
 }
 
-<<<<<<< HEAD
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
-.bigview{
-  height: 100%;
-  width: 100%;
-}
-=======
-.biocountry {
+.artistBio {
   background-color: $country-bodytwo;
   margin: 10% auto;
   padding: 1rem 1rem;
@@ -87,7 +85,7 @@ html, body {
   box-shadow: 10px 10px 5px
 }
 
-.topalbumscountry {
+.topAlbums {
   background-color: $country-bodytwo;
   margin: 10% auto;
   padding: 1rem 1rem;
@@ -99,7 +97,6 @@ html, body {
   box-shadow: 10px 10px 5px
 }
 
->>>>>>> b4531aa6cfdab8837b7a6295229b45f21b4d4834
 .popview {
   background-color: $pop-body;
 }

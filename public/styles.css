@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
-@import url("https://fonts.googleapis.com/css?family=Rock+Salt");
-@import url("https://fonts.googleapis.com/css?family=Lobster");
-@import url("https://fonts.googleapis.com/css?family=New+Rocker");
-
 html, body {
   height: 100%;
   width: 100%; }
@@ -59,7 +55,7 @@ html, body {
     text-align: center;
     padding: .5rem; }
 
-.biocountry {
+.artistBio {
   background-color: #cbd8de;
   margin: 10% auto;
   padding: 1rem 1rem;
@@ -70,7 +66,7 @@ html, body {
   border-style: solid;
   box-shadow: 10px 10px 5px; }
 
-.topalbumscountry {
+.topAlbums {
   background-color: #cbd8de;
   margin: 10% auto;
   padding: 1rem 1rem;
