@@ -3,7 +3,7 @@ var app = angular.module('musicMod');
 app.controller('mainCtrl', function($scope, $location, $timeout, ytFactory){
 
 	// arrays for populating select options:
-	$scope.yearArray = ['1990', '1995', '2000', '2005', '2010', '2015'];
+	$scope.yearArray = ['1990s', '1995', '2000s', '2005', '2010s', '2015'];
 	$scope.genreArray = [
 		'country',
 		'rap',
@@ -21,7 +21,7 @@ app.controller('mainCtrl', function($scope, $location, $timeout, ytFactory){
 	$scope.sendChoices = function(year, genre){
 
 		// create YT query string from the user's choices:
-		var queryStringYT = year + ' ' + genre + " music video";
+		var queryStringYT = year + '+' + genre + "+music+video+vevo";
 
 
 		// send the query string to the YT Factory via queryYT method (& trigger the YT API call):
