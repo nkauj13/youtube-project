@@ -3,7 +3,7 @@ var app = angular.module('musicMod');
 app.controller('mainCtrl', function($scope, $location, $timeout, ytFactory){
 
 	// arrays for populating select options:
-	$scope.yearArray = [];
+	$scope.yearArray = ['1990', '1995', '2000', '2005', '2010', '2015'];
 	$scope.genreArray = [
 		'country',
 		'rap',
@@ -12,10 +12,10 @@ app.controller('mainCtrl', function($scope, $location, $timeout, ytFactory){
 	];
 
 	// loops through years from 1990-2016
-	for(var i = 2016; i >= 1990; i--) {
+	/*for(var i = 2016; i >= 1990; i--) {
 		i.toString();
 		$scope.yearArray.push(i);
-	}
+	}*/
 
 	// handle user selections, create string for YT query:
 	$scope.sendChoices = function(year, genre){

@@ -3,7 +3,6 @@ var app = angular.module('musicMod');
 app.controller('musicCtrl', function($scope, $http, ytFactory){
 
 	// Create a variable to store the returned videoID in
-	var stuff = ytFactory.getYTData();
 	var stuff2 = ytFactory.getYTData();
 
 	var ytArray =[];
@@ -16,10 +15,10 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 		};
 		ytArray.push(newData);
 		// ytArray.push(vidID.snippet.channelTitle);
-		console.log(newData);
+		//console.log(newData);
 	});
 
-	console.log(ytArray);
+	//console.log(ytArray);
 
 	var youtubeStuff = ytArray[Math.floor(Math.random()*ytArray.length)];
 	//console.log(stuff.items[0].id.videoId);
@@ -49,10 +48,12 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 
 				//console.log(response.data);
 				//console.log($scope.artistBio);
+				console.log(response.data);
 
-				if(response.data.message === "The artist you supplied could not be found") {
+				if(response.data.message === "The artist you supplied could not be found" || response.data.artist.bio.content === "") {
 
 					$scope.artistBio = "Sorry, we could not find the artist's bio";
+					console.log(response.data.message);
 				}
 				else {
 
@@ -61,22 +62,27 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 
 	});
 
-	$http.get('http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=' + lastFMQueryString + '&api_key=ccdf156dfa78f0a2462aa132687608f0&format=json')
+	$http.get('http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=' + lastFMQueryString + '&autocorrect=1&api_key=ccdf156dfa78f0a2462aa132687608f0&format=json')
 			.then(function successCallback(response){
 
 				//console.log(response.data.topalbums);
 				//console.log($scope.albumArray);
 
-				console.log(response.data);
+				//console.log(response.data);
 
-				if(response.data.message === "The artist you supplied could not be found") {
+				if(response.data.message === "The artist you supplied could not be found" || response.data.topalbums.album.length === 0) {
 
-					$scope.albumArray = ['Sorry, we could not find any top albums'];
-					console.log($scope.albumArray);
+					$scope.showAlbumError = true;
+					$scope.albumErrorMsg = 'Sorry, we could not find any top albums';
+					console.log(response.data.message);
+					console.log(response.data.topalbums);
+					
 				}
 				else {
 
+					$scope.showAlbumData = true;
 					$scope.albumArray = response.data.topalbums.album;
+					
 				}
 
 	});
@@ -87,12 +93,17 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 				//console.log(response.data);
 				//console.log($scope.simArtistArray);
 
-				if(response.data.message === "The artist you supplied could not be found") {
+				if(response.data.message === "The artist you supplied could not be found"  || response.data.similarartists.artist.length === 0) {
 
-					$scope.simArtistArray = "Sorry, we could not find similar artists";
+					$scope.showSimArtistError = true;
+					$scope.simArtistErrorMsg = "Sorry, we could not find similar artists";
+					console.log(response.data.message);
+					console.log(response.data.similarartists);
+
 				}
 				else {
-
+					console.log(response.data.similarartists);
+					$scope.showSimArtistData = true;
 					$scope.simArtistArray = response.data.similarartists.artist;
 				}
 
