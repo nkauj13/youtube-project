@@ -1,6 +1,7 @@
 var app = angular.module('musicMod');
 
 app.controller('musicCtrl', function($scope, $http, ytFactory){
+	console.log("music controller!")
 
 	// Create a variable to store the returned videoID in
 	var stuff2 = ytFactory.getYTData();
@@ -29,10 +30,10 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 //lastFM
 	//format YT data for LastFM API:
 	var ytChannelData = youtubeStuff.title;
-	console.log(ytChannelData);
+	//console.log(ytChannelData);
 
 	var formattedYTString = ytChannelData.substr(0, ytChannelData.length-4);
-	console.log(formattedYTString);
+	//console.log(formattedYTString);
 
 	var lastFMQueryString = spacecamel(formattedYTString);
 
@@ -41,19 +42,19 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
     	return s.replace(/([a-z])([A-Z])/g, '$1 $2');
 	}
 
-	console.log(lastFMQueryString);
+	//console.log(lastFMQueryString);
 
 	$http.get('http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' +lastFMQueryString+ '&api_key=ccdf156dfa78f0a2462aa132687608f0&format=json')
 			.then(function successCallback(response){
 
 				//console.log(response.data);
 				//console.log($scope.artistBio);
-				console.log(response.data);
+				//console.log(response.data);
 
 				if(response.data.message === "The artist you supplied could not be found" || response.data.artist.bio.content === "") {
 
 					$scope.artistBio = "Sorry, we could not find the artist's bio";
-					console.log(response.data.message);
+					//console.log(response.data.message);
 				}
 				else {
 
@@ -74,8 +75,8 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 
 					$scope.showAlbumError = true;
 					$scope.albumErrorMsg = 'Sorry, we could not find any top albums';
-					console.log(response.data.message);
-					console.log(response.data.topalbums);
+					//console.log(response.data.message);
+					//console.log(response.data.topalbums);
 					
 				}
 				else {
@@ -97,12 +98,12 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 
 					$scope.showSimArtistError = true;
 					$scope.simArtistErrorMsg = "Sorry, we could not find similar artists";
-					console.log(response.data.message);
-					console.log(response.data.similarartists);
+					//onsole.log(response.data.message);
+					//console.log(response.data.similarartists);
 
 				}
 				else {
-					console.log(response.data.similarartists);
+					//console.log(response.data.similarartists);
 					$scope.showSimArtistData = true;
 					$scope.simArtistArray = response.data.similarartists.artist;
 				}

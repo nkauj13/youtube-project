@@ -21,11 +21,27 @@ app.controller('mainCtrl', function($scope, $location, $timeout, ytFactory){
 	$scope.sendChoices = function(year, genre){
 
 		// create YT query string from the user's choices:
-		var queryStringYT = year + ' ' + genre + " music video";
+		//var queryStringYT = year + ' ' + genre + " music video";
+		var queryStringYT = year + '+' + genre + "+music+video+vevo";
+		console.log(queryStringYT);
 
+		//set the yt topicID based on gere choice:
+			if(genre === "country"){
+				var topicID = '/m/01lyv';
+			}
+			else if(genre === 'rap'){
+				var topicID = '/m/0glt670';
+			}
+			else if(genre === 'rock'){
+				var topicID = '/m/06by7';
+			}
+			else if(genre === 'pop'){
+				var topicID = '/m/064t9';
+			}
 
-		// send the query string to the YT Factory via queryYT method (& trigger the YT API call):
-		ytFactory.queryYT(queryStringYT);
+			console.log(topicID);
+		// send the query string & topicID to the YT Factory via queryYT method (& trigger the YT API call):
+		ytFactory.queryYT(queryStringYT, topicID);
 
 		// this function will grab the genre from the sendChoices function and basically send the user to that path. You have to put a delay on this(hence the $timeout) because the musicCtrl loads before the factory sends it the data.
 		$timeout(function() {
