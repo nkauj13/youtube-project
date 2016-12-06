@@ -103,14 +103,7 @@ html, body {
   max-width: 50%;
   border-style: solid; }
 
-.artistBio {
-  margin: 5% auto;
-  padding: 1rem 1rem;
-  position: relative;
-  max-width: 50%;
-  border-style: solid; }
-
-.topAlbums {
+.artistBio, .topAlbums, .similarArtist {
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
@@ -120,17 +113,3 @@ html, body {
 #countryBio p {
   font-family: sans-serif;
   padding: 2rem; }
-
-.topAlbums {
-  margin: 0 auto;
-  padding: 1rem 1rem;
-  position: relative;
-  max-width: 50%;
-  border-style: solid; }
-
-.similarArtist {
-  margin: 5% auto;
-  padding: 1rem 1rem;
-  position: relative;
-  max-width: 50%;
-  border-style: solid; }

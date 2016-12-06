@@ -126,8 +126,7 @@ html, body {
   border-style: solid;
 }
 
-.artistBio {
-  // background-color: $country-bodytwo;
+.artistBio, .topAlbums, .similarArtist {
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
@@ -135,14 +134,13 @@ html, body {
   border-style: solid;
 }
 
-.topAlbums {
-  // background-color: $country-bodytwo;
-  margin: 5% auto;
-  padding: 1rem 1rem;
-  position: relative;
-  max-width: 50%;
-  border-style: solid;
-}
+// .topAlbums {
+//   margin: 5% auto;
+//   padding: 1rem 1rem;
+//   position: relative;
+//   max-width: 50%;
+//   border-style: solid;
+// }
 
 #countryBio{
   p {
@@ -151,20 +149,10 @@ html, body {
   }
 }
 
-.topAlbums {
-  // background-color: $country-bodytwo;
-  margin: 0 auto;
-  padding: 1rem 1rem;
-  position: relative;
-  max-width: 50%;
-  border-style: solid;
-}
-
-.similarArtist {
-  // background-color: $country-bodytwo;
-  margin: 5% auto;
-  padding: 1rem 1rem;
-  position: relative;
-  max-width: 50%;
-  border-style: solid;
-}
+// .similarArtist {
+//   margin: 5% auto;
+//   padding: 1rem 1rem;
+//   position: relative;
+//   max-width: 50%;
+//   border-style: solid;
+// }
