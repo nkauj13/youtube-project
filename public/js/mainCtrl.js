@@ -20,6 +20,8 @@ app.controller('mainCtrl', function($scope, $location, $timeout, ytFactory){
 	// handle user selections, create string for YT query:
 	$scope.sendChoices = function(year, genre){
 
+		var topicID;
+
 		// create YT query string from the user's choices:
 		//var queryStringYT = year + ' ' + genre + " music video";
 		var queryStringYT = year + '+' + genre + "+music+video+vevo";
@@ -27,16 +29,16 @@ app.controller('mainCtrl', function($scope, $location, $timeout, ytFactory){
 
 		//set the yt topicID based on gere choice:
 			if(genre === "country"){
-				var topicID = '/m/01lyv';
+				topicID = '/m/01lyv';
 			}
 			else if(genre === 'rap'){
-				var topicID = '/m/0glt670';
+				topicID = '/m/0glt670';
 			}
 			else if(genre === 'rock'){
-				var topicID = '/m/06by7';
+				topicID = '/m/06by7';
 			}
 			else if(genre === 'pop'){
-				var topicID = '/m/064t9';
+				topicID = '/m/064t9';
 			}
 
 			console.log(topicID);
