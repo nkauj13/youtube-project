@@ -46,6 +46,6 @@ app.controller('mainCtrl', function($scope, $location, $timeout, ytFactory){
 		// this function will grab the genre from the sendChoices function and basically send the user to that path. You have to put a delay on this(hence the $timeout) because the musicCtrl loads before the factory sends it the data.
 		$timeout(function() {
 			$location.path('/' + genre);
-		}, 500);
+		}, 1000);
 	};
 });
