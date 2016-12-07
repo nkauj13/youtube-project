@@ -20,16 +20,40 @@ app.controller('mainCtrl', function($scope, $location, $timeout, ytFactory){
 	// handle user selections, create string for YT query:
 	$scope.sendChoices = function(year, genre){
 
+<<<<<<< HEAD
 		// create YT query string from the user's choices:
 		var queryStringYT = year + '+' + genre + "+music+video+vevo";
 
+=======
+		var topicID;
+>>>>>>> bfd2e85af43a5af6b72bcdcc15517cc0bca019ed
 
-		// send the query string to the YT Factory via queryYT method (& trigger the YT API call):
-		ytFactory.queryYT(queryStringYT);
+		// create YT query string from the user's choices:
+		//var queryStringYT = year + ' ' + genre + " music video";
+		var queryStringYT = year + '+' + genre + "+music+video+vevo";
+		console.log(queryStringYT);
+
+		//set the yt topicID based on gere choice:
+			if(genre === "country"){
+				topicID = '/m/01lyv';
+			}
+			else if(genre === 'rap'){
+				topicID = '/m/0glt670';
+			}
+			else if(genre === 'rock'){
+				topicID = '/m/06by7';
+			}
+			else if(genre === 'pop'){
+				topicID = '/m/064t9';
+			}
+
+			console.log(topicID);
+		// send the query string & topicID to the YT Factory via queryYT method (& trigger the YT API call):
+		ytFactory.queryYT(queryStringYT, topicID);
 
 		// this function will grab the genre from the sendChoices function and basically send the user to that path. You have to put a delay on this(hence the $timeout) because the musicCtrl loads before the factory sends it the data.
 		$timeout(function() {
 			$location.path('/' + genre);
-		}, 500);
+		}, 1000);
 	};
 });

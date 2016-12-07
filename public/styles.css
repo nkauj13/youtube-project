@@ -27,7 +27,8 @@ html, body {
   padding: 1rem;
   border-style: solid; }
   .header h1 {
-    font-family: 'Bungee Inline', cursive; }
+    font-family: 'Bungee Inline', cursive;
+    color: #1e1e1e; }
 
 .main-description {
   background-color: #519ca5;
@@ -36,7 +37,6 @@ html, body {
   padding-bottom: 5rem;
   position: relative;
   max-width: 50%;
-  height: 4rem;
   border-style: solid; }
 
 .mainview {
@@ -57,10 +57,10 @@ html, body {
 .countryview {
   background-color: #704633;
   padding: 1rem 1rem; }
-  .countryview h1 {
+  .countryview h1, .countryview h2 {
     font-family: 'Pacifico', cursive;
     text-align: center;
-    padding: 2rem; }
+    padding: 1rem; }
   .countryview div {
     background-color: #cbd8de; }
 
@@ -84,6 +84,8 @@ html, body {
     padding: 2rem; }
   .rockview div {
     background-color: #811C4E; }
+  .rockview p, .rockview h1, .rockview li {
+    color: #CCCCCC; }
 
 .rapview {
   background-color: #990000;
@@ -103,34 +105,22 @@ html, body {
   max-width: 50%;
   border-style: solid; }
 
-.artistBio {
+.artistBio, .topAlbums, .similarArtist {
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
   border-style: solid; }
 
-.topAlbums {
-  margin: 5% auto;
-  padding: 1rem 1rem;
-  position: relative;
-  max-width: 50%;
-  border-style: solid; }
+.albumColumn {
+  margin: auto;
+  float: left;
+  margin-left: 15%;
+  width: 25%; }
 
-#countryBio p {
-  font-family: sans-serif;
-  padding: 2rem; }
+.artistColumn {
+  overflow: hidden;
+  width: 25%; }
 
-.topAlbums {
-  margin: 0 auto;
-  padding: 1rem 1rem;
-  position: relative;
-  max-width: 50%;
-  border-style: solid; }
-
-.similarArtist {
-  margin: 5% auto;
-  padding: 1rem 1rem;
-  position: relative;
-  max-width: 50%;
-  border-style: solid; }
+p, li {
+  font-family: helvetica; }

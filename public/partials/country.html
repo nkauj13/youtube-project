@@ -15,12 +15,12 @@
 
   <!-- artist bio -->
 
-  <div class="artistBio" id="countryBio">
+  <div class="artistBio"> <h2>Biography</h2>
     <p>{{artistBio}}</p>
   </div>
 
   <!-- top albums -->
-  <div class="topAlbums">
+  <div class="topAlbums albumColumn"> <h2>Top Albums</h2>
     <p ng-if="showAlbumError">{{albumErrorMsg}}</p>
 
     <ul ng-if="showAlbumData">
@@ -29,8 +29,9 @@
   </div>
 
   <!-- similar artist -->
-  <div class="similarArtist">
+  <div class="similarArtist artistColumn"><h2>Similar Artists</h2>
     <p ng-if="showSimArtistError">{{simArtistErrorMsg}}</p>
+
 
     <ul ng-if="showSimArtistData">
       <li ng-repeat="simArtist in simArtistArray | limitTo:25">{{simArtist.name}}</li>

@@ -10,10 +10,14 @@ app.factory('ytFactory', function($http) {
   return {
 
     // This function makes the API call and stores the response in ytData from line 6
-    queryYT: function(query) {
+    queryYT: function(query,topic) {
       $http({
         method: "GET",
+<<<<<<< HEAD
         url: "https://www.googleapis.com/youtube/v3/search?category=Rock&part=snippet&maxResults=30&q=" + query + "&type=video&key=AIzaSyBIupTaipxwn9WorBosS7NqGyn7tNMMkQM"
+=======
+        url: "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=" + query + "&type=video&topicId=" + topic + "&key=AIzaSyBIupTaipxwn9WorBosS7NqGyn7tNMMkQM"
+>>>>>>> bfd2e85af43a5af6b72bcdcc15517cc0bca019ed
       })
         .then(function successCallback(response) {
         ytData = response.data;
