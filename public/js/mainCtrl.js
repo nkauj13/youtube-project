@@ -20,13 +20,8 @@ app.controller('mainCtrl', function($scope, $location, $timeout, ytFactory){
 	// handle user selections, create string for YT query:
 	$scope.sendChoices = function(year, genre){
 
-<<<<<<< HEAD
-		// create YT query string from the user's choices:
-		var queryStringYT = year + '+' + genre + "+music+video+vevo";
 
-=======
 		var topicID;
->>>>>>> bfd2e85af43a5af6b72bcdcc15517cc0bca019ed
 
 		// create YT query string from the user's choices:
 		//var queryStringYT = year + ' ' + genre + " music video";
