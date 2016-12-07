@@ -23,7 +23,7 @@
       <!-- artist bio -->
       <div class="row">
         <div class="twelve columns">
-          <div class="artistBio">
+          <div class="artistBio rock">
             <p>{{artistBio}}</p>
           </div>
         </div>
@@ -31,7 +31,7 @@
       <!-- top albums -->
       <div class="row"> <!-- this row needs an extra class made to handle the border on the whole box -->
         <div class="six columns">
-            <div class="topAlbums">
+            <div class="topAlbums rock">
               <p ng-if="showAlbumError">{{albumErrorMsg}}</p>
               <ul ng-if="showAlbumData">
                 <li ng-repeat="album in albumArray | limitTo:25">{{album.name}}</li>
@@ -42,7 +42,7 @@
       <!-- similar artist -->
 
         <div class="six columns">
-          <div class="similarArtist">
+          <div class="similarArtist rock">
             <p ng-if="showSimArtistError">{{simArtistErrorMsg}}</p>
             <ul ng-if="showSimArtistData">
               <li ng-repeat="simArtist in simArtistArray | limitTo:25">{{simArtist.name}}</li>

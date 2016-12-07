@@ -19,7 +19,6 @@ footer{
     left: 0;
     width: 100%;
     padding: 1rem;
-    border-style: solid;
 }
 
 header {
@@ -30,7 +29,6 @@ header {
   left: 0;
   width: 100%;
   padding: 1rem;
-  border-style: solid;
   h1 {
     font-family: 'Bungee Inline', cursive;
     color: $gray;
@@ -73,10 +71,11 @@ header {
     text-align: center;
     padding: 1rem;
   }
-  div {
+  div.country {
     background-color: $country-bodytwo;
   }
 }
+
 
 .popview {
   background-color: $pop-body;
@@ -86,7 +85,7 @@ header {
     text-align: center;
     padding: 2rem;
   }
-  div {
+  div.pop  {
     background-color: $pop-bodytwo;
   }
 }
@@ -100,7 +99,7 @@ header {
     text-align: center;
     padding: 2rem;
   }
-  div {
+  div.rock {
     background-color: $rock-bodytwo;
   }
   p, h1, li {
@@ -116,18 +115,17 @@ header {
     text-align: center;
     padding: 2rem;
   }
-  div {
+  div.rap {
     background-color: $rap-bodytwo;
   }
 }
 
-.video{
+div.video{
   margin: 5% auto;
   text-align: center;
   padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
-  border-style: solid;
   background-color: black;
 }
 
@@ -135,7 +133,7 @@ header {
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
-  max-width: 50%;
+  // max-width: 50%;
   border-style: solid;
 }
 

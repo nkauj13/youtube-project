@@ -14,8 +14,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 1rem;
-  border-style: solid; }
+  padding: 1rem; }
 
 header {
   background-color: #554250;
@@ -24,8 +23,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem;
-  border-style: solid; }
+  padding: 1rem; }
   header h1 {
     font-family: 'Bungee Inline', cursive;
     color: #1e1e1e; }
@@ -61,7 +59,7 @@ header {
     font-family: 'Pacifico', cursive;
     text-align: center;
     padding: 1rem; }
-  .countryview div {
+  .countryview div.country {
     background-color: #cbd8de; }
 
 .popview {
@@ -71,7 +69,7 @@ header {
     font-family: 'Lobster', cursive;
     text-align: center;
     padding: 2rem; }
-  .popview div {
+  .popview div.pop {
     background-color: #97CABD; }
 
 .rockview {
@@ -82,7 +80,7 @@ header {
     font-family: 'New Rocker', cursive;
     text-align: center;
     padding: 2rem; }
-  .rockview div {
+  .rockview div.rock {
     background-color: #811C4E; }
   .rockview p, .rockview h1, .rockview li {
     color: #CCCCCC; }
@@ -94,23 +92,21 @@ header {
     font-family: 'Rock Salt', cursive;
     text-align: center;
     padding: 2rem; }
-  .rapview div {
+  .rapview div.rap {
     background-color: #7e7e7e; }
 
-.video {
+div.video {
   margin: 5% auto;
   text-align: center;
   padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
-  border-style: solid;
   background-color: black; }
 
 .artistBio {
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
-  max-width: 50%;
   border-style: solid; }
 
 .topAlbums, .similarArtist {
