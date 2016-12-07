@@ -1,21 +1,27 @@
 <section class="mainview">
-<!-- main content -->
+    <div class="container"><!-- main content -->
 
-    <!-- description content -->
-    <div class="main-description"><p>Welcome to Youtube for Ballerz. It's a little bit of Youtube with all the necessary information you can find from Wikipedia. Just choose the year and genre
-      of the kind of music you want to hear and enjoy!</p></div>
-
-    <!-- input selection -->
-    <div class="generator">
-        <p>Choose a Year</p>
-        <select ng-model="year">
-            <option ng-repeat="decade in yearArray" value="{{decade}}">{{decade}}</option>
-        </select>
-
-        <p>Choose a Genre</p>
-        <select ng-model="genre">
-            <option ng-repeat="musicType in genreArray" value="{{musicType}}">{{musicType}}</option>
-        </select>
-        <button type="button" ng-click="sendChoices(year, genre)">Get My Video!</button>
+        <!-- description content - this will be wrapped in a row, tweleve column -->
+        <div class="row">
+            <div class="twelve columns">
+                <div class="main-description">Description. Our player is so cool yo</div>
+            </div>
+        </div>
+        <!-- input selection - this will be wrapped in a row, tweleve column -->
+        <div class="row">
+            <div class="twelve columns">
+                <div class="generator">
+                    <p>Choose a Year</p>
+                    <select ng-model="year">
+                        <option ng-repeat="decade in yearArray" value="{{decade}}">{{decade}}</option>
+                    </select>
+                    <p>Choose a Genre</p>
+                    <select ng-model="genre">
+                        <option ng-repeat="musicType in genreArray" value="{{musicType}}">{{musicType}}</option>
+                    </select>
+                    <button type="button" ng-click="sendChoices(year, genre)">Get My Video!</button>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

@@ -12,7 +12,7 @@ html, body {
   padding: 1rem 1 rem;
 }
 
-.footer{
+footer{
     background-color: $main-header;
     right: 0;
     bottom: 0;
@@ -22,7 +22,7 @@ html, body {
     border-style: solid;
 }
 
-.header {
+header {
   background-color: $main-header;
   position: relative;
   right: 0;
@@ -128,9 +128,10 @@ html, body {
   position: relative;
   max-width: 50%;
   border-style: solid;
+  background-color: black;
 }
 
-.artistBio, .topAlbums, .similarArtist, {
+.artistBio {
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
@@ -138,17 +139,10 @@ html, body {
   border-style: solid;
 }
 
-.albumColumn {
-  margin: auto;
-  float:left;
-  // margin-right:1%;
-  margin-left: 15%;
-  width:25%;
-}
-
-.artistColumn {
-  overflow:hidden;
-   width:25%;
+.topAlbums, .similarArtist, {
+  padding: 1rem 1rem;
+  position: relative;
+  border-style: solid;
 }
 
 p, li {

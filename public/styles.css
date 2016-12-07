@@ -8,7 +8,7 @@ html, body {
   width: 100%;
   padding: 1rem 1 rem; }
 
-.footer {
+footer {
   background-color: #554250;
   right: 0;
   bottom: 0;
@@ -17,7 +17,7 @@ html, body {
   padding: 1rem;
   border-style: solid; }
 
-.header {
+header {
   background-color: #554250;
   position: relative;
   right: 0;
@@ -26,7 +26,7 @@ html, body {
   width: 100%;
   padding: 1rem;
   border-style: solid; }
-  .header h1 {
+  header h1 {
     font-family: 'Bungee Inline', cursive;
     color: #1e1e1e; }
 
@@ -103,24 +103,20 @@ html, body {
   padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
-  border-style: solid; }
+  border-style: solid;
+  background-color: black; }
 
-.artistBio, .topAlbums, .similarArtist {
+.artistBio {
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
   max-width: 50%;
   border-style: solid; }
 
-.albumColumn {
-  margin: auto;
-  float: left;
-  margin-left: 15%;
-  width: 25%; }
-
-.artistColumn {
-  overflow: hidden;
-  width: 25%; }
+.topAlbums, .similarArtist {
+  padding: 1rem 1rem;
+  position: relative;
+  border-style: solid; }
 
 p, li {
   font-family: helvetica; }
