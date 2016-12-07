@@ -1,5 +1,5 @@
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=New+Rocker|Bungee+Inline|Lobster|Rock+Salt|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=New+Rocker|Bungee+Inline|Lobster|Rock+Salt|Pacifico|Oswald');
 
 html, body {
   height: 100%;
@@ -14,11 +14,10 @@ html, body {
 
 footer{
     background-color: $main-header;
-    right: 0;
-    bottom: 0;
-    left: 0;
     width: 100%;
     padding: 1rem;
+    position: relative;
+    margin: 0;
 }
 
 header {
@@ -30,10 +29,15 @@ header {
   width: 100%;
   padding: 1rem;
   h1 {
-    font-family: 'Bungee Inline', cursive;
-    color: $gray;
+    font-family: 'Oswald', sans-serif;
+    color: $deep-blue;
   }
-
+  p {
+    padding-top: 2rem;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 
 .main-description{
@@ -49,8 +53,9 @@ header {
 .mainview {
   background-color: $main-body;
   padding: 2rem 2rem ;
-  height: auto;
+  // height: auto;
   width: auto;
+  min-height: 90vh;
 }
 
 .generator{
@@ -63,10 +68,10 @@ header {
   border-style: solid;
 }
 
-.countryview {
+#countryview {
   background-color: $country-body;
   padding: 1rem 1rem;
-  h1, h2 {
+  h1, h3 {
     font-family: 'Pacifico', cursive;
     text-align: center;
     padding: 1rem;
@@ -77,10 +82,10 @@ header {
 }
 
 
-.popview {
+#popview {
   background-color: $pop-body;
   padding: 1rem 1rem;
-  h1 {
+  h1, h3 {
     font-family: 'Lobster', cursive;
     text-align: center;
     padding: 2rem;
@@ -90,11 +95,11 @@ header {
   }
 }
 
-.rockview {
+#rockview {
   background-color: $rock-body;
   padding: 1rem 1rem;
   width: auto;
-  h1 {
+  h1, h3 {
     font-family: 'New Rocker', cursive;
     text-align: center;
     padding: 2rem;
@@ -102,15 +107,15 @@ header {
   div.rock {
     background-color: $rock-bodytwo;
   }
-  p, h1, li {
+  p, h1, h3, li {
     color: $silver;
   }
 }
 
-.rapview {
+#rapview {
   background-color: $rap-body;
   padding: 1rem 1rem;
-  h1 {
+  h1, h3 {
     font-family: 'Rock Salt', cursive;
     text-align: center;
     padding: 2rem;
@@ -133,7 +138,6 @@ div.video{
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
-  // max-width: 50%;
   border-style: solid;
 }
 

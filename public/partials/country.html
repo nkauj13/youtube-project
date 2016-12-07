@@ -1,4 +1,4 @@
-<section class="countryview">
+<section id="countryview">
   <div class="container">
       <div class="row">
           <div class="twelve columns">
@@ -24,6 +24,7 @@
       <div class="row">
         <div class="twelve columns">
           <div class="artistBio country">
+            <h3>Artist Biography</h3>
             <p>{{artistBio}}</p>
           </div>
         </div>
@@ -32,6 +33,7 @@
       <div class="row"> <!-- this row needs an extra class made to handle the border on the whole box -->
         <div class="six columns">
             <div class="topAlbums country">
+              <h3>Top Albums</h3>
               <p ng-if="showAlbumError">{{albumErrorMsg}}</p>
               <ul ng-if="showAlbumData">
                 <li ng-repeat="album in albumArray | limitTo:25">{{album.name}}</li>
@@ -43,6 +45,7 @@
 
         <div class="six columns">
           <div class="similarArtist country">
+            <h3>Similar Artists</h3>
             <p ng-if="showSimArtistError">{{simArtistErrorMsg}}</p>
             <ul ng-if="showSimArtistData">
               <li ng-repeat="simArtist in simArtistArray | limitTo:25">{{simArtist.name}}</li>

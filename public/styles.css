@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=New+Rocker|Bungee+Inline|Lobster|Rock+Salt|Pacifico");
+@import url("https://fonts.googleapis.com/css?family=New+Rocker|Bungee+Inline|Lobster|Rock+Salt|Pacifico|Oswald");
 html, body {
   height: 100%;
   width: 100%; }
@@ -10,11 +10,10 @@ html, body {
 
 footer {
   background-color: #554250;
-  right: 0;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  padding: 1rem; }
+  padding: 1rem;
+  position: relative;
+  margin: 0; }
 
 header {
   background-color: #554250;
@@ -25,8 +24,12 @@ header {
   width: 100%;
   padding: 1rem; }
   header h1 {
-    font-family: 'Bungee Inline', cursive;
-    color: #1e1e1e; }
+    font-family: 'Oswald', sans-serif;
+    color: #00BFFF; }
+  header p {
+    padding-top: 2rem; }
+  header a {
+    text-decoration: none; }
 
 .main-description {
   background-color: #519ca5;
@@ -40,8 +43,8 @@ header {
 .mainview {
   background-color: #37486D;
   padding: 2rem 2rem;
-  height: auto;
-  width: auto; }
+  width: auto;
+  min-height: 90vh; }
 
 .generator {
   background-color: #519ca5;
@@ -52,47 +55,47 @@ header {
   max-width: 50%;
   border-style: solid; }
 
-.countryview {
+#countryview {
   background-color: #704633;
   padding: 1rem 1rem; }
-  .countryview h1, .countryview h2 {
+  #countryview h1, #countryview h3 {
     font-family: 'Pacifico', cursive;
     text-align: center;
     padding: 1rem; }
-  .countryview div.country {
+  #countryview div.country {
     background-color: #cbd8de; }
 
-.popview {
+#popview {
   background-color: #9EAD8A;
   padding: 1rem 1rem; }
-  .popview h1 {
+  #popview h1, #popview h3 {
     font-family: 'Lobster', cursive;
     text-align: center;
     padding: 2rem; }
-  .popview div.pop {
+  #popview div.pop {
     background-color: #97CABD; }
 
-.rockview {
+#rockview {
   background-color: #401841;
   padding: 1rem 1rem;
   width: auto; }
-  .rockview h1 {
+  #rockview h1, #rockview h3 {
     font-family: 'New Rocker', cursive;
     text-align: center;
     padding: 2rem; }
-  .rockview div.rock {
+  #rockview div.rock {
     background-color: #811C4E; }
-  .rockview p, .rockview h1, .rockview li {
+  #rockview p, #rockview h1, #rockview h3, #rockview li {
     color: #CCCCCC; }
 
-.rapview {
+#rapview {
   background-color: #990000;
   padding: 1rem 1rem; }
-  .rapview h1 {
+  #rapview h1, #rapview h3 {
     font-family: 'Rock Salt', cursive;
     text-align: center;
     padding: 2rem; }
-  .rapview div.rap {
+  #rapview div.rap {
     background-color: #7e7e7e; }
 
 div.video {
