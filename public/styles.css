@@ -42,8 +42,8 @@ header {
 
 .main-description {
   background-color: white;
+  padding: 1rem 1rem;
   margin: 5% auto;
-  padding: 1rem;
   position: relative;
   border: solid 1.5px black;
   border-radius: 5px;
@@ -52,7 +52,6 @@ header {
     padding: 1em; }
 
 .mainview {
-  padding: 2rem 2rem;
   min-height: 90vh; }
 
 .generator {
@@ -186,7 +185,7 @@ p, li {
 button {
   display: block;
   margin-top: 1%;
-  margin-left: 1.2em;
+  margin-left: 1.3em;
   margin-bottom: 3em; }
 
 select {
