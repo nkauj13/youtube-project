@@ -4,6 +4,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  background-color: $body;
 }
 
 .bigview{
@@ -31,6 +32,9 @@ header {
   h1 {
     font-family: 'Oswald', sans-serif;
     color: $white;
+    position: relative;
+    top: 18px;
+    left: 10px;
   }
   p {
     padding-top: 2rem;
@@ -38,6 +42,13 @@ header {
   a {
     text-decoration: none;
   }
+  img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+  }
+
 }
 
 .main-description{
@@ -47,13 +58,13 @@ header {
   padding-bottom: 5rem;
   position: relative;
   border-style: solid;
+  max-width: 80%;
 }
 
 .mainview {
-  background-color: $main-body;
+  // background-color: $main-body;
   padding: 2rem 2rem ;
   // height: auto;
-  width: auto;
   min-height: 90vh;
 }
 
@@ -64,6 +75,7 @@ header {
   padding-bottom: 10px;
   position: relative;
   border-style: solid;
+  max-width: 80%;
 }
 
 #countryview {
