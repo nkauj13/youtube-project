@@ -37,16 +37,16 @@ header {
   header img {
     float: left;
     width: 100px;
-    height: 100px;
-    background: #555; }
+    height: 100px; }
 
 .main-description {
-  background-color: #519ca5;
+  background-color: white;
   margin: 0 auto;
   padding: 1rem 1rem;
   padding-bottom: 5rem;
   position: relative;
-  border-style: solid;
+  border: solid 1.5px black;
+  border-radius: 5px;
   max-width: 80%; }
 
 .mainview {
@@ -54,68 +54,76 @@ header {
   min-height: 90vh; }
 
 .generator {
-  background-color: #519ca5;
+  background-color: white;
   margin: 5% auto;
   padding: 1rem 1rem;
   padding-bottom: 10px;
   position: relative;
-  border-style: solid;
+  border: solid 1.5px black;
+  border-radius: 5px;
   max-width: 80%; }
 
 #countryview {
-  background-color: #704633;
   padding: 1rem 1rem; }
-  #countryview h1, #countryview h3 {
+  #countryview h1, #countryview h3, #countryview li, #countryview p {
     font-family: 'Pacifico', cursive;
+    padding: 1rem;
     text-align: center;
-    padding: 1rem; }
+    color: #633f17; }
   #countryview div.country {
-    background-color: #633f17; }
+    background-color: rgba(99, 63, 23, 0.4); }
   #countryview .country-wrapper {
-    background-color: #633f17;
-    border-style: solid; }
+    background-color: rgba(99, 63, 23, 0.4);
+    border: solid 1.5px black;
+    border-radius: 5px; }
 
 #popview {
-  background-color: #9EAD8A;
   padding: 1rem 1rem; }
-  #popview h1, #popview h3 {
+  #popview h1, #popview h3, #popview li, #popview p {
     font-family: 'Lobster', cursive;
     text-align: center;
-    padding: 2rem; }
+    padding: 2rem;
+    color: #041871; }
   #popview div.pop {
-    background-color: #041871; }
+    background-color: rgba(4, 24, 113, 0.4);
+    opacity: 0.4; }
   #popview .pop-wrapper {
-    background-color: #041871;
-    border-style: solid; }
+    background-color: rgba(4, 24, 113, 0.4);
+    border: solid 1.5px black;
+    border-radius: 5px;
+    opacity: 0.4; }
 
 #rockview {
-  background-color: #401841;
   padding: 1rem 1rem;
   width: auto; }
-  #rockview h1, #rockview h3 {
+  #rockview h1, #rockview h3, #rockview li {
     font-family: 'New Rocker', cursive;
     text-align: center;
-    padding: 2rem; }
+    padding: 2rem;
+    color: #602d90; }
   #rockview div.rock {
-    background-color: #602d90; }
-  #rockview p, #rockview h1, #rockview h3, #rockview li {
-    color: #CCCCCC; }
+    background-color: rgba(96, 45, 144, 0.4);
+    /*opacity: 0.4;*/ }
   #rockview .rock-wrapper {
-    background-color: #602d90;
-    border-style: solid; }
+    background-color: rgba(96, 45, 144, 0.4);
+    border: solid 1.5px black;
+    border-radius: 5px; }
 
 #rapview {
-  background-color: #990000;
   padding: 1rem 1rem; }
-  #rapview h1, #rapview h3 {
+  #rapview h1, #rapview h3, #rapview li {
     font-family: 'Rock Salt', cursive;
     text-align: center;
-    padding: 2rem; }
+    padding: 2rem;
+    color: #9a1d20; }
   #rapview div.rap {
-    background-color: #9a1d20; }
+    background-color: rgba(154, 29, 32, 0.4);
+    opacity: 0.4; }
   #rapview .rap-wrapper {
-    background-color: #9a1d20;
-    border-style: solid; }
+    background-color: rgba(154, 29, 32, 0.4);
+    border: solid 1.5px black;
+    border-radius: 5px;
+    opacity: 0.4; }
 
 div.video {
   margin: 5% auto;
@@ -129,7 +137,8 @@ div.video {
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
-  border-style: solid;
+  border: solid 1.5px black;
+  border-radius: 5px;
   max-width: 80%; }
 
 .topAlbums, .similarArtist {

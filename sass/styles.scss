@@ -46,109 +46,116 @@ header {
   float: left;
   width: 100px;
   height: 100px;
-  background: #555;
   }
 
 }
 
 .main-description{
-  background-color: $main-bodytwo;
+  background-color: $white;
   margin: 0 auto;
   padding: 1rem 1rem;
   padding-bottom: 5rem;
   position: relative;
-  border-style: solid;
+  border: solid 1.5px black;
+  border-radius: 5px;
   max-width: 80%;
 }
 
 .mainview {
-  // background-color: $main-body;
   padding: 2rem 2rem ;
   // height: auto;
   min-height: 90vh;
 }
 
 .generator{
-  background-color: $main-bodytwo;
+  background-color: $white;
   margin: 5% auto;
   padding: 1rem 1rem;
   padding-bottom: 10px;
   position: relative;
-  border-style: solid;
+  border: solid 1.5px black;
+  border-radius: 5px;
   max-width: 80%;
 }
 
 #countryview {
-  background-color: $country-body;
   padding: 1rem 1rem;
-  h1, h3 {
+  h1, h3, li, p {
     font-family: 'Pacifico', cursive;
-    text-align: center;
     padding: 1rem;
+    text-align: center;
+    color: $country-bodytwo
   }
   div.country {
-    background-color: $country-bodytwo;
+    background-color: rgba($country-bodytwo, $alpha);
   }
   .country-wrapper {
-    background-color: $country-bodytwo;
-    border-style: solid;
+    background-color: rgba($country-bodytwo, $alpha);
+    border: solid 1.5px black;
+    border-radius: 5px;
   }
 }
 
 
 #popview {
-  background-color: $pop-body;
   padding: 1rem 1rem;
-  h1, h3 {
+  h1, h3, li, p {
     font-family: 'Lobster', cursive;
     text-align: center;
     padding: 2rem;
+    color: $pop-bodytwo;
   }
   div.pop  {
-    background-color: $pop-bodytwo;
+    background-color: rgba($pop-bodytwo, $alpha);
+    opacity: 0.4;
   }
   .pop-wrapper {
-    background-color: $pop-bodytwo;
-    border-style: solid;
+    background-color: rgba($pop-bodytwo, $alpha);
+    border: solid 1.5px black;
+    border-radius: 5px;
+    opacity: 0.4;
   }
 }
 
 #rockview {
-  background-color: $rock-body;
   padding: 1rem 1rem;
   width: auto;
-  h1, h3 {
+  h1, h3, li {
     font-family: 'New Rocker', cursive;
     text-align: center;
     padding: 2rem;
+    color: $rock-bodytwo;
   }
   div.rock {
-    background-color: $rock-bodytwo;
+    background-color: rgba($rock-bodytwo, $alpha);
+    /*opacity: 0.4;*/
   }
-  p, h1, h3, li {
-    color: $silver;
-  }
-  .rock-wrapper {
-    background-color: $rock-bodytwo;
-    border-style: solid;
 
+  .rock-wrapper {
+    background-color: rgba($rock-bodytwo, $alpha);
+    border: solid 1.5px black;
+    border-radius: 5px;
   }
 }
 
+
 #rapview {
-  background-color: $rap-body;
   padding: 1rem 1rem;
-  h1, h3 {
+  h1, h3, li {
     font-family: 'Rock Salt', cursive;
     text-align: center;
     padding: 2rem;
+    color: $rap-bodytwo;
   }
   div.rap {
-    background-color: $rap-bodytwo;
+    background-color: rgba($rap-bodytwo, $alpha);
+    opacity: 0.4;
   }
   .rap-wrapper {
-    background-color: $rap-bodytwo;
-    border-style: solid;
+    background-color: rgba($rap-bodytwo, $alpha);
+    border: solid 1.5px black;
+    border-radius: 5px;
+    opacity: 0.4;
   }
 }
 
@@ -165,7 +172,8 @@ div.video{
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
-  border-style: solid;
+  border: solid 1.5px black;
+  border-radius: 5px;
   max-width: 80%;
 }
 
