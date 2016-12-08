@@ -8,12 +8,12 @@ footer {
   /*background-color: $main-header;*/
   border-bottom: 90px solid black;
   width: 100%;
-  /*padding: 1rem;*/
+  padding: 1rem;
   position: relative;
   margin: 0; }
   footer img {
     width: 100%;
-    margin-bottom: -7px; }
+    margin-bottom: -17px; }
 
 header {
   background-color: black;
