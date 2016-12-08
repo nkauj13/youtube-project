@@ -1,11 +1,10 @@
 var app = angular.module('musicMod');
 
 app.controller('musicCtrl', function($scope, $http, ytFactory){
-	console.log("music controller!")
+	console.log("music controller!");
 
 	// Create a variable to store the returned videoID in
 	var stuff2 = ytFactory.getYTData();
-
 	var ytArray =[];
 
 	stuff2.items.forEach(function(vidData) {
@@ -15,21 +14,35 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 			title: vidData.snippet.channelTitle
 		};
 		ytArray.push(newData);
-		// ytArray.push(vidID.snippet.channelTitle);
-		//console.log(newData);
 	});
 
-	//console.log(ytArray);
+	randomVevo(ytArray);
+	var youtubeVidTitle;
 
+	function randomVevo(ytArray){
 	var youtubeStuff = ytArray[Math.floor(Math.random()*ytArray.length)];
-	//console.log(stuff.items[0].id.videoId);
+	var findVevo = youtubeStuff.title.match(/VEVO/g);
+
+	if (findVevo) {
+		$scope.link = 'https://www.youtube.com/watch?v=' + youtubeStuff.vidID;
+		console.log('vevothingsearch passed');
+		youtubeVidTitle = youtubeStuff;
+	} else {
+		console.log('vevothingsearch failed');
+		randomVevo(ytArray);
+	}
+}
+
+// do {
+// 	$scope.link = 'https://www.youtube.com/watch?v=' + youtubeStuff.vidID;
+// } while (findVevo);
 
 	// YouTube Embed
-	$scope.link = 'https://www.youtube.com/watch?v=' + youtubeStuff.vidID;
+	// $scope.link = 'https://www.youtube.com/watch?v=' + youtubeStuff.vidID;
 
 //lastFM
 	//format YT data for LastFM API:
-	var ytChannelData = youtubeStuff.title;
+	var ytChannelData = youtubeVidTitle.title;
 	//console.log(ytChannelData);
 
 	var formattedYTString = ytChannelData.substr(0, ytChannelData.length-4);
@@ -77,13 +90,13 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 					$scope.albumErrorMsg = 'Sorry, we could not find any top albums';
 					//console.log(response.data.message);
 					//console.log(response.data.topalbums);
-					
+
 				}
 				else {
 
 					$scope.showAlbumData = true;
 					$scope.albumArray = response.data.topalbums.album;
-					
+
 				}
 
 	});
