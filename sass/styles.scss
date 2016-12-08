@@ -14,11 +14,16 @@ html, body {
 }
 
 footer{
-    background-color: $main-header;
+    /*background-color: $main-header;*/
+    border-bottom: 90px solid $main-header;
     width: 100%;
     padding: 1rem;
     position: relative;
     margin: 0;
+}
+
+#footer-img {
+  width: 100%;
 }
 
 header {

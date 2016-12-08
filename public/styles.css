@@ -10,11 +10,15 @@ html, body {
   padding: 1rem 1 rem; }
 
 footer {
-  background-color: black;
+  /*background-color: $main-header;*/
+  border-bottom: 90px solid black;
   width: 100%;
   padding: 1rem;
   position: relative;
   margin: 0; }
+
+#footer-img {
+  width: 100%; }
 
 header {
   background-color: black;
