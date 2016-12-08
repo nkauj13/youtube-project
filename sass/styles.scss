@@ -67,7 +67,7 @@ header {
   border-radius: 5px;
   max-width: 80%;
   p {
-    padding: 2em;
+    padding: 1em;
   }
 }
 
@@ -85,19 +85,16 @@ header {
   border: solid 1.5px black;
   border-radius: 5px;
   max-width: 80%;
-  p {
-    padding: 3em;
-  }
   h6 {
     font-weight: bold;
     margin-bottom: .5rem;
-    padding-right: 1.5em;
-    padding-left: 1.6em;
+    padding-right: 1em;
+    padding-left: 1em;
   }
 }
 
 #yearpadding {
-  padding-top: 3em;
+  padding-top: 2em;
 }
 
 #countryview {
@@ -242,8 +239,8 @@ p, li {
 button {
   display: block;
   margin-top: 1%;
-  margin-left: 2em;
-  margin-bottom: 2em;
+  margin-left: 1.2em;
+  margin-bottom: 3em;
 }
 
 select {
@@ -252,5 +249,5 @@ select {
 
 .ng-pristine, .ng-valid, .ng-not-empty, .ng-dirty, .ng-valid-parse,
 .ng-touched, .ng-untouched, .ng-valid, .ng-empty {
-  margin-left: 1.5em;
+  margin-left: 1em;
 }
