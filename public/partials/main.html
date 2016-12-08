@@ -23,11 +23,13 @@
         <div class="row">
             <div class="twelve columns">
                 <div class="generator">
-                    <p>Choose a Year</p>
+                    <!-- <p>Choose a Year</p> -->
+                     <h6>Choose a Year</h6>
                     <select ng-model="year">
                         <option ng-repeat="decade in yearArray" value="{{decade}}">{{decade}}</option>
                     </select>
-                    <p>Choose a Genre</p>
+                    <!-- <p>Choose a Genre</p> -->
+                    <h6>Choose a Genre</h6>
                     <select ng-model="genre">
                         <option ng-repeat="musicType in genreArray" value="{{musicType}}">{{musicType}}</option>
                     </select>

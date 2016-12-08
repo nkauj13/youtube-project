@@ -5,13 +5,15 @@ html, body {
   background-color: #d4d4d4; }
 
 footer {
+  /*background-color: $main-header;*/
   border-bottom: 90px solid black;
   width: 100%;
+  /*padding: 1rem;*/
   position: relative;
   margin: 0; }
-
-#footer-img {
-  width: 100%; }
+  footer img {
+    width: 100%;
+    margin-bottom: -7px; }
 
 header {
   background-color: black;
@@ -25,16 +27,19 @@ header {
     font-family: 'Oswald', sans-serif;
     color: white;
     position: relative;
-    top: 18px;
-    left: 10px; }
+    margin-bottom: 0px;
+    font-size: 5rem;
+    /*top: 18px;
+    left: 10px;*/ }
   header p {
     padding-top: 2rem; }
   header a {
     text-decoration: none; }
-  header img {
-    float: left;
-    width: 100px;
-    height: 100px; }
+  header div.logo {
+    width: 90%; }
+  header div.header-title {
+    width: 100%;
+    margin-top: 5%; }
 
 .main-description {
   background-color: white;
@@ -60,6 +65,9 @@ header {
   border: solid 1.5px black;
   border-radius: 5px;
   max-width: 80%; }
+  .generator h6 {
+    font-weight: bold;
+    margin-bottom: .5rem; }
 
 #countryview {
   padding: 1rem 1rem; }
@@ -160,6 +168,15 @@ div.video {
 
 .topAlbums, .similarArtist {
   padding: 1rem 1rem; }
+  .topAlbums p, .similarArtist p {
+    text-align: center; }
 
 p {
   font-family: helvetica; }
+
+button {
+  display: block;
+  margin-top: 1%; }
+
+select {
+  width: 140px; }

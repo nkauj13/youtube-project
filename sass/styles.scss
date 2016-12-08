@@ -14,14 +14,16 @@ html, body {
 // }
 
 footer{
-    border-bottom: 90px solid $main-header;
-    width: 100%;
-    position: relative;
-    margin: 0;
-}
-
-#footer-img {
+  /*background-color: $main-header;*/
+  border-bottom: 90px solid $main-header;
   width: 100%;
+  /*padding: 1rem;*/
+  position: relative;
+  margin: 0;
+  img {
+    width: 100%;
+    margin-bottom: -7px;
+  }
 }
 
 header {
@@ -36,8 +38,10 @@ header {
     font-family: 'Oswald', sans-serif;
     color: $white;
     position: relative;
-    top: 18px;
-    left: 10px;
+    margin-bottom: 0px;
+    font-size: 5rem;
+    /*top: 18px;
+    left: 10px;*/
   }
   p {
     padding-top: 2rem;
@@ -45,10 +49,12 @@ header {
   a {
     text-decoration: none;
   }
-  img {
-  float: left;
-  width: 100px;
-  height: 100px;
+  div.logo{
+    width: 90%;
+  }
+  div.header-title{
+    width: 100%;
+    margin-top: 5%;
   }
 
 }
@@ -81,7 +87,13 @@ header {
   border: solid 1.5px black;
   border-radius: 5px;
   max-width: 80%;
+  h6 {
+    font-weight: bold;
+    margin-bottom: .5rem;
+  }
 }
+
+
 
 #countryview {
   padding: 1rem 1rem;
@@ -208,8 +220,20 @@ div.video{
 
 .topAlbums, .similarArtist, {
   padding: 1rem 1rem;
+  p {
+    text-align: center;
+  }
 }
 
 p {
   font-family: helvetica;
+}
+
+button {
+  display: block;
+  margin-top: 1%;
+}
+
+select {
+  width: 140px;
 }
