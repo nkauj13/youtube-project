@@ -7,18 +7,21 @@ html, body {
   background-color: $body;
 }
 
-.bigview{
-  height: 100%;
-  width: 100%;
-  padding: 1rem 1 rem;
-}
+// .bigview{
+//   height: 100%;
+//   width: 100%;
+//   padding: 1rem 1 rem;
+// }
 
 footer{
-    background-color: $main-header;
+    border-bottom: 90px solid $main-header;
     width: 100%;
-    padding: 1rem;
     position: relative;
     margin: 0;
+}
+
+#footer-img {
+  width: 100%;
 }
 
 header {
@@ -52,13 +55,15 @@ header {
 
 .main-description{
   background-color: $white;
-  margin: 0 auto;
-  padding: 1rem 1rem;
-  padding-bottom: 5rem;
+  margin: 5% auto;
+  padding: 2rem 2rem;
   position: relative;
   border: solid 1.5px black;
   border-radius: 5px;
   max-width: 80%;
+  p {
+    padding: 2em 2em;
+  }
 }
 
 .mainview {
@@ -69,8 +74,8 @@ header {
 
 .generator{
   background-color: $white;
-  margin: 5% auto;
-  padding: 1rem 1rem;
+  margin: 2% auto;
+  padding: 2rem 2rem;
   padding-bottom: 10px;
   position: relative;
   border: solid 1.5px black;
@@ -80,11 +85,14 @@ header {
 
 #countryview {
   padding: 1rem 1rem;
-  h1, h3, li, p {
+  h1, h3 {
     font-family: 'Pacifico', cursive;
-    padding: 1rem;
     text-align: center;
-    color: $country-bodytwo
+    color: $country-bodytwo;
+  }
+  p, li {
+    font-family: helvetica;
+    color: $country-bodytwo;
   }
   div.country {
     background-color: rgba($country-bodytwo, $alpha);
@@ -93,74 +101,95 @@ header {
     background-color: rgba($country-bodytwo, $alpha);
     border: solid 1.5px black;
     border-radius: 5px;
+    max-width: 80%;
+
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative;
   }
 }
 
 
 #popview {
   padding: 1rem 1rem;
-  h1, h3, li, p {
+  h1, h3 {
     font-family: 'Lobster', cursive;
     text-align: center;
-    padding: 2rem;
+    color: $pop-bodytwo;
+  }
+  p, li {
+    font-family: helvetica;
     color: $pop-bodytwo;
   }
   div.pop  {
     background-color: rgba($pop-bodytwo, $alpha);
-    opacity: 0.4;
   }
   .pop-wrapper {
     background-color: rgba($pop-bodytwo, $alpha);
     border: solid 1.5px black;
     border-radius: 5px;
-    opacity: 0.4;
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative;
+    max-width: 80%;
   }
+
 }
 
 #rockview {
   padding: 1rem 1rem;
   width: auto;
-  h1, h3, li {
+  h1, h3 {
     font-family: 'New Rocker', cursive;
     text-align: center;
-    padding: 2rem;
+    color: $rock-bodytwo;
+  }
+  p, li {
+    font-family: helvetica;
     color: $rock-bodytwo;
   }
   div.rock {
     background-color: rgba($rock-bodytwo, $alpha);
-    /*opacity: 0.4;*/
   }
-
   .rock-wrapper {
     background-color: rgba($rock-bodytwo, $alpha);
     border: solid 1.5px black;
     border-radius: 5px;
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative;
+    max-width: 80%;
   }
 }
 
 
 #rapview {
   padding: 1rem 1rem;
-  h1, h3, li {
+  h1, h3 {
     font-family: 'Rock Salt', cursive;
     text-align: center;
-    padding: 2rem;
+    color: $rap-bodytwo;
+  }
+  p, li {
+    font-family: helvetica;
     color: $rap-bodytwo;
   }
   div.rap {
     background-color: rgba($rap-bodytwo, $alpha);
-    opacity: 0.4;
   }
   .rap-wrapper {
     background-color: rgba($rap-bodytwo, $alpha);
     border: solid 1.5px black;
     border-radius: 5px;
-    opacity: 0.4;
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative;
+    max-width: 80%;
   }
 }
 
 div.video{
-  margin: 5% auto;
+  margin: auto;
   text-align: center;
   padding: 1rem 1rem;
   position: relative;
@@ -181,6 +210,6 @@ div.video{
   padding: 1rem 1rem;
 }
 
-p, li {
+p {
   font-family: helvetica;
 }
