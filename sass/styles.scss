@@ -14,14 +14,14 @@ html, body {
 // }
 
 footer{
-    border-bottom: 90px solid $main-header;
-    width: 100%;
-    position: relative;
-    margin: 0;
-}
-
-#footer-img {
+  border-bottom: 90px solid $main-header;
   width: 100%;
+  position: relative;
+  margin: 0;
+  img {
+    width: 100%;
+    margin-bottom: -7px;
+  }
 }
 
 header {
@@ -36,8 +36,10 @@ header {
     font-family: 'Oswald', sans-serif;
     color: $white;
     position: relative;
-    top: 18px;
-    left: 10px;
+    margin-bottom: 0px;
+    font-size: 5rem;
+    /*top: 18px;
+    left: 10px;*/
   }
   p {
     padding-top: 2rem;
@@ -45,10 +47,12 @@ header {
   a {
     text-decoration: none;
   }
-  img {
-  float: left;
-  width: 100px;
-  height: 100px;
+  div.logo{
+    width: 90%;
+  }
+  div.header-title{
+    width: 100%;
+    margin-top: 5%;
   }
 
 }
@@ -56,37 +60,43 @@ header {
 .main-description{
   background-color: $white;
   margin: 5% auto;
-  padding: 2rem 2rem;
+  padding: 1rem;
   position: relative;
   border: solid 1.5px black;
   border-radius: 5px;
   max-width: 80%;
   p {
-    padding-right: 3em;
-    padding-left: 3em;
+    padding: 3em;
   }
 }
 
 .mainview {
   padding: 2rem 2rem ;
-  // height: auto;
   min-height: 90vh;
 }
 
 .generator{
   background-color: $white;
   margin: 2% auto;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   padding-bottom: 10px;
   position: relative;
   border: solid 1.5px black;
   border-radius: 5px;
   max-width: 80%;
   p {
+    padding: 3em;
+  }
+  h6 {
+    font-weight: bold;
+    margin-bottom: .5rem;
     padding-right: 3em;
     padding-left: 3em;
   }
+}
 
+#yearpadding {
+  padding-top: 3em;
 }
 
 #countryview {
@@ -99,8 +109,6 @@ header {
   p, li {
     font-family: helvetica;
     color: $country-bodytwo;
-    padding-right: 3em;
-    padding-left: 3em;
   }
   div.country {
     background-color: rgba($country-bodytwo, $alpha);
@@ -110,7 +118,6 @@ header {
     border: solid 1.5px black;
     border-radius: 5px;
     max-width: 80%;
-
     margin: auto;
     padding: 1rem 1rem;
     position: relative;
@@ -128,8 +135,6 @@ header {
   p, li {
     font-family: helvetica;
     color: $pop-bodytwo;
-    padding-right: 3em;
-    padding-left: 3em;
   }
   div.pop  {
     background-color: rgba($pop-bodytwo, $alpha);
@@ -157,8 +162,6 @@ header {
   p, li {
     font-family: helvetica;
     color: $rock-bodytwo;
-    padding-right: 3em;
-    padding-left: 3em;
   }
   div.rock {
     background-color: rgba($rock-bodytwo, $alpha);
@@ -185,8 +188,6 @@ header {
   p, li {
     font-family: helvetica;
     color: $rap-bodytwo;
-    padding-right: 3em;
-    padding-left: 3em;
   }
   div.rap {
     background-color: rgba($rap-bodytwo, $alpha);
@@ -218,12 +219,37 @@ div.video{
   border: solid 1.5px black;
   border-radius: 5px;
   max-width: 80%;
+  p {
+    padding-right: 3em;
+    padding-left: 3em;
+  }
 }
 
 .topAlbums, .similarArtist, {
   padding: 1rem 1rem;
+  p {
+    text-align: center;
+  }
 }
 
 p, li {
   font-family: helvetica;
+  padding-right: 3em;
+  padding-left: 2em;
+}
+
+button {
+  display: block;
+  margin-top: 1%;
+  margin-left: 4em;
+  margin-bottom: 3em;
+}
+
+select {
+  width: 140px;
+}
+
+.ng-pristine, .ng-valid, .ng-not-empty, .ng-dirty, .ng-valid-parse,
+.ng-touched, .ng-untouched, .ng-valid, .ng-empty {
+  margin-left: 3em;
 }

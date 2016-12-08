@@ -9,9 +9,9 @@ footer {
   width: 100%;
   position: relative;
   margin: 0; }
-
-#footer-img {
-  width: 100%; }
+  footer img {
+    width: 100%;
+    margin-bottom: -7px; }
 
 header {
   background-color: black;
@@ -25,28 +25,30 @@ header {
     font-family: 'Oswald', sans-serif;
     color: white;
     position: relative;
-    top: 18px;
-    left: 10px; }
+    margin-bottom: 0px;
+    font-size: 5rem;
+    /*top: 18px;
+    left: 10px;*/ }
   header p {
     padding-top: 2rem; }
   header a {
     text-decoration: none; }
-  header img {
-    float: left;
-    width: 100px;
-    height: 100px; }
+  header div.logo {
+    width: 90%; }
+  header div.header-title {
+    width: 100%;
+    margin-top: 5%; }
 
 .main-description {
   background-color: white;
   margin: 5% auto;
-  padding: 2rem 2rem;
+  padding: 1rem;
   position: relative;
   border: solid 1.5px black;
   border-radius: 5px;
   max-width: 80%; }
   .main-description p {
-    padding-right: 3em;
-    padding-left: 3em; }
+    padding: 3em; }
 
 .mainview {
   padding: 2rem 2rem;
@@ -55,15 +57,22 @@ header {
 .generator {
   background-color: white;
   margin: 2% auto;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   padding-bottom: 10px;
   position: relative;
   border: solid 1.5px black;
   border-radius: 5px;
   max-width: 80%; }
   .generator p {
+    padding: 3em; }
+  .generator h6 {
+    font-weight: bold;
+    margin-bottom: .5rem;
     padding-right: 3em;
     padding-left: 3em; }
+
+#yearpadding {
+  padding-top: 3em; }
 
 #countryview {
   padding: 1rem 1rem; }
@@ -73,9 +82,7 @@ header {
     color: #633f17; }
   #countryview p, #countryview li {
     font-family: helvetica;
-    color: #633f17;
-    padding-right: 3em;
-    padding-left: 3em; }
+    color: #633f17; }
   #countryview div.country {
     background-color: rgba(99, 63, 23, 0.4); }
   #countryview .country-wrapper {
@@ -95,9 +102,7 @@ header {
     color: #041871; }
   #popview p, #popview li {
     font-family: helvetica;
-    color: #041871;
-    padding-right: 3em;
-    padding-left: 3em; }
+    color: #041871; }
   #popview div.pop {
     background-color: rgba(4, 24, 113, 0.4); }
   #popview .pop-wrapper {
@@ -118,9 +123,7 @@ header {
     color: #602d90; }
   #rockview p, #rockview li {
     font-family: helvetica;
-    color: #602d90;
-    padding-right: 3em;
-    padding-left: 3em; }
+    color: #602d90; }
   #rockview div.rock {
     background-color: rgba(96, 45, 144, 0.4); }
   #rockview .rock-wrapper {
@@ -140,9 +143,7 @@ header {
     color: #9a1d20; }
   #rapview p, #rapview li {
     font-family: helvetica;
-    color: #9a1d20;
-    padding-right: 3em;
-    padding-left: 3em; }
+    color: #9a1d20; }
   #rapview div.rap {
     background-color: rgba(154, 29, 32, 0.4); }
   #rapview .rap-wrapper {
@@ -169,9 +170,29 @@ div.video {
   border: solid 1.5px black;
   border-radius: 5px;
   max-width: 80%; }
+  .artistBio p {
+    padding-right: 3em;
+    padding-left: 3em; }
 
 .topAlbums, .similarArtist {
   padding: 1rem 1rem; }
+  .topAlbums p, .similarArtist p {
+    text-align: center; }
 
 p, li {
-  font-family: helvetica; }
+  font-family: helvetica;
+  padding-right: 3em;
+  padding-left: 2em; }
+
+button {
+  display: block;
+  margin-top: 1%;
+  margin-left: 4em;
+  margin-bottom: 3em; }
+
+select {
+  width: 140px; }
+
+.ng-pristine, .ng-valid, .ng-not-empty, .ng-dirty, .ng-valid-parse,
+.ng-touched, .ng-untouched, .ng-valid, .ng-empty {
+  margin-left: 3em; }
