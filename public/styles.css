@@ -7,11 +7,12 @@ html, body {
 footer {
   border-bottom: 90px solid black;
   width: 100%;
+  padding: 1rem;
   position: relative;
   margin: 0; }
   footer img {
     width: 100%;
-    margin-bottom: -7px; }
+    margin-bottom: -17px; }
 
 header {
   background-color: black;
@@ -48,7 +49,7 @@ header {
   border-radius: 5px;
   max-width: 80%; }
   .main-description p {
-    padding: 3em; }
+    padding: 2em; }
 
 .mainview {
   padding: 2rem 2rem;
@@ -68,8 +69,8 @@ header {
   .generator h6 {
     font-weight: bold;
     margin-bottom: .5rem;
-    padding-right: 3em;
-    padding-left: 3em; }
+    padding-right: 1.5em;
+    padding-left: 1.6em; }
 
 #yearpadding {
   padding-top: 3em; }
@@ -171,8 +172,8 @@ div.video {
   border-radius: 5px;
   max-width: 80%; }
   .artistBio p {
-    padding-right: 3em;
-    padding-left: 3em; }
+    padding-right: 1em;
+    padding-left: 1em; }
 
 .topAlbums, .similarArtist {
   padding: 1rem 1rem; }
@@ -181,18 +182,18 @@ div.video {
 
 p, li {
   font-family: helvetica;
-  padding-right: 3em;
-  padding-left: 2em; }
+  padding-right: 1em;
+  padding-left: .5em; }
 
 button {
   display: block;
   margin-top: 1%;
-  margin-left: 4em;
-  margin-bottom: 3em; }
+  margin-left: 2em;
+  margin-bottom: 2em; }
 
 select {
   width: 140px; }
 
 .ng-pristine, .ng-valid, .ng-not-empty, .ng-dirty, .ng-valid-parse,
 .ng-touched, .ng-untouched, .ng-valid, .ng-empty {
-  margin-left: 3em; }
+  margin-left: 1.5em; }

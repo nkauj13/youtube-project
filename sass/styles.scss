@@ -16,11 +16,12 @@ html, body {
 footer{
   border-bottom: 90px solid $main-header;
   width: 100%;
+  padding: 1rem;
   position: relative;
   margin: 0;
   img {
     width: 100%;
-    margin-bottom: -7px;
+    margin-bottom: -17px;
   }
 }
 
@@ -66,7 +67,7 @@ header {
   border-radius: 5px;
   max-width: 80%;
   p {
-    padding: 3em;
+    padding: 2em;
   }
 }
 
@@ -90,8 +91,8 @@ header {
   h6 {
     font-weight: bold;
     margin-bottom: .5rem;
-    padding-right: 3em;
-    padding-left: 3em;
+    padding-right: 1.5em;
+    padding-left: 1.6em;
   }
 }
 
@@ -220,8 +221,8 @@ div.video{
   border-radius: 5px;
   max-width: 80%;
   p {
-    padding-right: 3em;
-    padding-left: 3em;
+    padding-right: 1em;
+    padding-left: 1em;
   }
 }
 
@@ -234,15 +235,15 @@ div.video{
 
 p, li {
   font-family: helvetica;
-  padding-right: 3em;
-  padding-left: 2em;
+  padding-right: 1em;
+  padding-left: .5em;
 }
 
 button {
   display: block;
   margin-top: 1%;
-  margin-left: 4em;
-  margin-bottom: 3em;
+  margin-left: 2em;
+  margin-bottom: 2em;
 }
 
 select {
@@ -251,5 +252,5 @@ select {
 
 .ng-pristine, .ng-valid, .ng-not-empty, .ng-dirty, .ng-valid-parse,
 .ng-touched, .ng-untouched, .ng-valid, .ng-empty {
-  margin-left: 3em;
+  margin-left: 1.5em;
 }
