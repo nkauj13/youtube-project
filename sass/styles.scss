@@ -30,7 +30,7 @@ header {
   padding: 1rem;
   h1 {
     font-family: 'Oswald', sans-serif;
-    color: $deep-blue;
+    color: $white;
   }
   p {
     padding-top: 2rem;
@@ -46,7 +46,6 @@ header {
   padding: 1rem 1rem;
   padding-bottom: 5rem;
   position: relative;
-  max-width: 50%;
   border-style: solid;
 }
 
@@ -64,7 +63,6 @@ header {
   padding: 1rem 1rem;
   padding-bottom: 10px;
   position: relative;
-  max-width: 50%;
   border-style: solid;
 }
 
@@ -79,6 +77,10 @@ header {
   div.country {
     background-color: $country-bodytwo;
   }
+  .country-wrapper {
+    background-color: $country-bodytwo;
+    border-style: solid;
+  }
 }
 
 
@@ -92,6 +94,10 @@ header {
   }
   div.pop  {
     background-color: $pop-bodytwo;
+  }
+  .pop-wrapper {
+    background-color: $pop-bodytwo;
+    border-style: solid;
   }
 }
 
@@ -110,6 +116,11 @@ header {
   p, h1, h3, li {
     color: $silver;
   }
+  .rock-wrapper {
+    background-color: $rock-bodytwo;
+    border-style: solid;
+
+  }
 }
 
 #rapview {
@@ -123,6 +134,10 @@ header {
   div.rap {
     background-color: $rap-bodytwo;
   }
+  .rap-wrapper {
+    background-color: $rap-bodytwo;
+    border-style: solid;
+  }
 }
 
 div.video{
@@ -130,7 +145,7 @@ div.video{
   text-align: center;
   padding: 1rem 1rem;
   position: relative;
-  max-width: 50%;
+  max-width: 80%;
   background-color: black;
 }
 
@@ -139,12 +154,11 @@ div.video{
   padding: 1rem 1rem;
   position: relative;
   border-style: solid;
+  max-width: 80%;
 }
 
 .topAlbums, .similarArtist, {
   padding: 1rem 1rem;
-  position: relative;
-  border-style: solid;
 }
 
 p, li {
