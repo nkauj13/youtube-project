@@ -1,28 +1,31 @@
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=New+Rocker|Bungee+Inline|Lobster|Rock+Salt|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=New+Rocker|Bungee+Inline|Lobster|Rock+Salt|Pacifico|Oswald');
 
 html, body {
   height: 100%;
   width: 100%;
+  background-color: $body;
 }
 
-.bigview{
-  height: 100%;
+// .bigview{
+//   height: 100%;
+//   width: 100%;
+//   padding: 1rem 1 rem;
+// }
+
+footer{
+  border-bottom: 90px solid $main-header;
   width: 100%;
-  padding: 1rem 1 rem;
-}
-
-.footer{
-    background-color: $main-header;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  padding: 1rem;
+  position: relative;
+  margin: 0;
+  img {
     width: 100%;
-    padding: 1rem;
-    border-style: solid;
+    margin-bottom: -17px;
+  }
 }
 
-.header {
+header {
   background-color: $main-header;
   position: relative;
   right: 0;
@@ -30,127 +33,220 @@ html, body {
   left: 0;
   width: 100%;
   padding: 1rem;
-  border-style: solid;
   h1 {
-    font-family: 'Bungee Inline', cursive;
-    color: $gray;
+    font-family: 'Oswald', sans-serif;
+    color: $white;
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 5rem;
+    /*top: 18px;
+    left: 10px;*/
+  }
+  p {
+    padding-top: 2rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  div.logo{
+    width: 90%;
+  }
+  div.header-title{
+    width: 100%;
+    margin-top: 5%;
   }
 
 }
 
 .main-description{
-  background-color: $main-bodytwo;
-  margin: 0 auto;
+  background-color: $white;
   padding: 1rem 1rem;
-  padding-bottom: 5rem;
+  margin: 5% auto;
   position: relative;
-  max-width: 50%;
-  border-style: solid;
+  border: solid 1.5px black;
+  border-radius: 5px;
+  max-width: 80%;
+  p {
+    padding: 1em;
+  }
 }
 
 .mainview {
-  background-color: $main-body;
-  padding: 2rem 2rem ;
-  height: auto;
-  width: auto;
+  min-height: 90vh;
 }
 
 .generator{
-  background-color: $main-bodytwo;
-  margin: 5% auto;
+  background-color: $white;
+  margin: 0% auto;
   padding: 1rem 1rem;
   padding-bottom: 10px;
   position: relative;
-  max-width: 50%;
-  border-style: solid;
+  border: solid 1.5px black;
+  border-radius: 5px;
+  max-width: 80%;
+  h6 {
+    font-weight: bold;
+    margin-bottom: .5rem;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
 }
 
-.countryview {
-  background-color: $country-body;
+#yearpadding {
+  padding-top: 2em;
+}
+
+#countryview {
   padding: 1rem 1rem;
-  h1, h2 {
+  h1, h3 {
     font-family: 'Pacifico', cursive;
     text-align: center;
-    padding: 1rem;
+    color: $country-bodytwo;
   }
-  div {
-    background-color: $country-bodytwo;
+  p, li {
+    font-family: helvetica;
+    color: $country-bodytwo;
+  }
+  div.country {
+    background-color: rgba($country-bodytwo, $alpha);
+  }
+  .country-wrapper {
+    background-color: rgba($country-bodytwo, $alpha);
+    border: solid 1.5px black;
+    border-radius: 5px;
+    max-width: 80%;
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative;
   }
 }
 
-.popview {
-  background-color: $pop-body;
+
+#popview {
   padding: 1rem 1rem;
-  h1 {
+  h1, h3 {
     font-family: 'Lobster', cursive;
     text-align: center;
-    padding: 2rem;
+    color: $pop-bodytwo;
   }
-  div {
-    background-color: $pop-bodytwo;
+  p, li {
+    font-family: helvetica;
+    color: $pop-bodytwo;
   }
+  div.pop  {
+    background-color: rgba($pop-bodytwo, $alpha);
+  }
+  .pop-wrapper {
+    background-color: rgba($pop-bodytwo, $alpha);
+    border: solid 1.5px black;
+    border-radius: 5px;
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative;
+    max-width: 80%;
+  }
+
 }
 
-.rockview {
-  background-color: $rock-body;
+#rockview {
   padding: 1rem 1rem;
   width: auto;
-  h1 {
+  h1, h3 {
     font-family: 'New Rocker', cursive;
     text-align: center;
-    padding: 2rem;
+    color: $rock-bodytwo;
   }
-  div {
-    background-color: $rock-bodytwo;
+  p, li {
+    font-family: helvetica;
+    color: $rock-bodytwo;
   }
-  p, h1, li {
-    color: $silver;
+  div.rock {
+    background-color: rgba($rock-bodytwo, $alpha);
+  }
+  .rock-wrapper {
+    background-color: rgba($rock-bodytwo, $alpha);
+    border: solid 1.5px black;
+    border-radius: 5px;
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative;
+    max-width: 80%;
   }
 }
 
-.rapview {
-  background-color: $rap-body;
+
+#rapview {
   padding: 1rem 1rem;
-  h1 {
+  h1, h3 {
     font-family: 'Rock Salt', cursive;
     text-align: center;
-    padding: 2rem;
+    color: $rap-bodytwo;
   }
-  div {
-    background-color: $rap-bodytwo;
+  p, li {
+    font-family: helvetica;
+    color: $rap-bodytwo;
+  }
+  div.rap {
+    background-color: rgba($rap-bodytwo, $alpha);
+  }
+  .rap-wrapper {
+    background-color: rgba($rap-bodytwo, $alpha);
+    border: solid 1.5px black;
+    border-radius: 5px;
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative;
+    max-width: 80%;
   }
 }
 
-.video{
-  margin: 5% auto;
+div.video{
+  margin: auto;
   text-align: center;
   padding: 1rem 1rem;
   position: relative;
-  max-width: 50%;
-  border-style: solid;
+  max-width: 80%;
+  background-color: black;
 }
 
-.artistBio, .topAlbums, .similarArtist, {
+.artistBio {
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
-  max-width: 50%;
-  border-style: solid;
+  border: solid 1.5px black;
+  border-radius: 5px;
+  max-width: 80%;
+  p {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
 }
 
-.albumColumn {
-  margin: auto;
-  float:left;
-  // margin-right:1%;
-  margin-left: 15%;
-  width:25%;
-}
-
-.artistColumn {
-  overflow:hidden;
-   width:25%;
+.topAlbums, .similarArtist, {
+  padding: 1rem 1rem;
+  p {
+    text-align: center;
+  }
 }
 
 p, li {
   font-family: helvetica;
+  padding-right: 1em;
+  padding-left: .5em;
+}
+
+button {
+  display: block;
+  margin-top: 1%;
+  margin-left: 1.3em;
+  margin-bottom: 3em;
+}
+
+select {
+  width: 140px;
+}
+
+.ng-pristine, .ng-valid, .ng-not-empty, .ng-dirty, .ng-valid-parse,
+.ng-touched, .ng-untouched, .ng-valid, .ng-empty {
+  margin-left: 1em;
 }

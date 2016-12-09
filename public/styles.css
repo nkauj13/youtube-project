@@ -1,126 +1,196 @@
-@import url("https://fonts.googleapis.com/css?family=New+Rocker|Bungee+Inline|Lobster|Rock+Salt|Pacifico");
+@import url("https://fonts.googleapis.com/css?family=New+Rocker|Bungee+Inline|Lobster|Rock+Salt|Pacifico|Oswald");
 html, body {
   height: 100%;
-  width: 100%; }
-
-.bigview {
-  height: 100%;
   width: 100%;
-  padding: 1rem 1 rem; }
+  background-color: #d4d4d4; }
 
-.footer {
-  background-color: #554250;
-  right: 0;
-  bottom: 0;
-  left: 0;
+footer {
+  border-bottom: 90px solid black;
   width: 100%;
   padding: 1rem;
-  border-style: solid; }
+  position: relative;
+  margin: 0; }
+  footer img {
+    width: 100%;
+    margin-bottom: -17px; }
 
-.header {
-  background-color: #554250;
+header {
+  background-color: black;
   position: relative;
   right: 0;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem;
-  border-style: solid; }
-  .header h1 {
-    font-family: 'Bungee Inline', cursive;
-    color: #1e1e1e; }
+  padding: 1rem; }
+  header h1 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 5rem;
+    /*top: 18px;
+    left: 10px;*/ }
+  header p {
+    padding-top: 2rem; }
+  header a {
+    text-decoration: none; }
+  header div.logo {
+    width: 90%; }
+  header div.header-title {
+    width: 100%;
+    margin-top: 5%; }
 
 .main-description {
-  background-color: #519ca5;
-  margin: 0 auto;
+  background-color: white;
   padding: 1rem 1rem;
-  padding-bottom: 5rem;
+  margin: 5% auto;
   position: relative;
-  max-width: 50%;
-  border-style: solid; }
+  border: solid 1.5px black;
+  border-radius: 5px;
+  max-width: 80%; }
+  .main-description p {
+    padding: 1em; }
 
 .mainview {
-  background-color: #37486D;
-  padding: 2rem 2rem;
-  height: auto;
-  width: auto; }
+  min-height: 90vh; }
 
 .generator {
-  background-color: #519ca5;
-  margin: 5% auto;
+  background-color: white;
+  margin: 0% auto;
   padding: 1rem 1rem;
   padding-bottom: 10px;
   position: relative;
-  max-width: 50%;
-  border-style: solid; }
+  border: solid 1.5px black;
+  border-radius: 5px;
+  max-width: 80%; }
+  .generator h6 {
+    font-weight: bold;
+    margin-bottom: .5rem;
+    padding-right: 1em;
+    padding-left: 1em; }
 
-.countryview {
-  background-color: #704633;
+#yearpadding {
+  padding-top: 2em; }
+
+#countryview {
   padding: 1rem 1rem; }
-  .countryview h1, .countryview h2 {
+  #countryview h1, #countryview h3 {
     font-family: 'Pacifico', cursive;
     text-align: center;
-    padding: 1rem; }
-  .countryview div {
-    background-color: #cbd8de; }
+    color: #633f17; }
+  #countryview p, #countryview li {
+    font-family: helvetica;
+    color: #633f17; }
+  #countryview div.country {
+    background-color: rgba(99, 63, 23, 0.4); }
+  #countryview .country-wrapper {
+    background-color: rgba(99, 63, 23, 0.4);
+    border: solid 1.5px black;
+    border-radius: 5px;
+    max-width: 80%;
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative; }
 
-.popview {
-  background-color: #9EAD8A;
+#popview {
   padding: 1rem 1rem; }
-  .popview h1 {
+  #popview h1, #popview h3 {
     font-family: 'Lobster', cursive;
     text-align: center;
-    padding: 2rem; }
-  .popview div {
-    background-color: #97CABD; }
+    color: #041871; }
+  #popview p, #popview li {
+    font-family: helvetica;
+    color: #041871; }
+  #popview div.pop {
+    background-color: rgba(4, 24, 113, 0.4); }
+  #popview .pop-wrapper {
+    background-color: rgba(4, 24, 113, 0.4);
+    border: solid 1.5px black;
+    border-radius: 5px;
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative;
+    max-width: 80%; }
 
-.rockview {
-  background-color: #401841;
+#rockview {
   padding: 1rem 1rem;
   width: auto; }
-  .rockview h1 {
+  #rockview h1, #rockview h3 {
     font-family: 'New Rocker', cursive;
     text-align: center;
-    padding: 2rem; }
-  .rockview div {
-    background-color: #811C4E; }
-  .rockview p, .rockview h1, .rockview li {
-    color: #CCCCCC; }
+    color: #602d90; }
+  #rockview p, #rockview li {
+    font-family: helvetica;
+    color: #602d90; }
+  #rockview div.rock {
+    background-color: rgba(96, 45, 144, 0.4); }
+  #rockview .rock-wrapper {
+    background-color: rgba(96, 45, 144, 0.4);
+    border: solid 1.5px black;
+    border-radius: 5px;
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative;
+    max-width: 80%; }
 
-.rapview {
-  background-color: #990000;
+#rapview {
   padding: 1rem 1rem; }
-  .rapview h1 {
+  #rapview h1, #rapview h3 {
     font-family: 'Rock Salt', cursive;
     text-align: center;
-    padding: 2rem; }
-  .rapview div {
-    background-color: #7e7e7e; }
+    color: #9a1d20; }
+  #rapview p, #rapview li {
+    font-family: helvetica;
+    color: #9a1d20; }
+  #rapview div.rap {
+    background-color: rgba(154, 29, 32, 0.4); }
+  #rapview .rap-wrapper {
+    background-color: rgba(154, 29, 32, 0.4);
+    border: solid 1.5px black;
+    border-radius: 5px;
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative;
+    max-width: 80%; }
 
-.video {
-  margin: 5% auto;
+div.video {
+  margin: auto;
   text-align: center;
   padding: 1rem 1rem;
   position: relative;
-  max-width: 50%;
-  border-style: solid; }
+  max-width: 80%;
+  background-color: black; }
 
-.artistBio, .topAlbums, .similarArtist {
+.artistBio {
   margin: 5% auto;
   padding: 1rem 1rem;
   position: relative;
-  max-width: 50%;
-  border-style: solid; }
+  border: solid 1.5px black;
+  border-radius: 5px;
+  max-width: 80%; }
+  .artistBio p {
+    padding-right: 1em;
+    padding-left: 1em; }
 
-.albumColumn {
-  margin: auto;
-  float: left;
-  margin-left: 15%;
-  width: 25%; }
-
-.artistColumn {
-  overflow: hidden;
-  width: 25%; }
+.topAlbums, .similarArtist {
+  padding: 1rem 1rem; }
+  .topAlbums p, .similarArtist p {
+    text-align: center; }
 
 p, li {
-  font-family: helvetica; }
+  font-family: helvetica;
+  padding-right: 1em;
+  padding-left: .5em; }
+
+button {
+  display: block;
+  margin-top: 1%;
+  margin-left: 1.3em;
+  margin-bottom: 3em; }
+
+select {
+  width: 140px; }
+
+.ng-pristine, .ng-valid, .ng-not-empty, .ng-dirty, .ng-valid-parse,
+.ng-touched, .ng-untouched, .ng-valid, .ng-empty {
+  margin-left: 1em; }

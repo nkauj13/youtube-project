@@ -1,22 +1,59 @@
 //colors
 
-$main-header: #554250;
+$body: #d4d4d4;
+
+
+$main-header: black;
 $main-body: #37486D;
 $main-bodytwo: #519ca5;
 
 $rock-body: #401841;
-$rock-bodytwo: #811C4E;
+$rock-bodytwo: rgb(96,45,144);
 
 $rap-body: #990000;
-$rap-bodytwo: #7e7e7e;
+$rap-bodytwo: rgb(154,29,32);
 
 $country-body: #704633;
-$country-bodytwo: #cbd8de;
+$country-bodytwo: rgb(99,63,23);//#633f17;
 
 $pop-body: #9EAD8A;
-$pop-bodytwo: #97CABD;
+$pop-bodytwo: rgb(4,24,113);
 
 
 //other colors
 $gray: #1e1e1e;
 $silver: #CCCCCC;
+$deep-blue: #00BFFF;
+$white: white;
+
+
+// country: #633f17;
+// background color for counry divs: #633f17 with .4 opacity
+//
+// rap: #9a1d20;
+// background color for counry divs: #9a1d20 with .4 opacity
+//
+// rock: #602d90;
+// background color for counry divs: #602d90 with .4 opacity
+//
+// pop: #041871;
+// background color for counry divs: #041871 with .4 opacity
+
+// Declare the color as RGB;
+// $countryBG: rgb(99,63,23);
+// // Declare an alpha
+// $alpha: .4;
+
+$countryBG: rgb(99,63,23);
+$alpha: .4;
+
+
+// in the Sass file where the bg is being set for the div
+// background-color: rgba($countryBG, $alpha);
+//
+// alpha codes for the colors:
+//
+// country: rgb(99,63,23)
+// rap: rgb(154,29,32)
+// rock: rgb(96,45,144)
+// pop: rgb(4,24,113)

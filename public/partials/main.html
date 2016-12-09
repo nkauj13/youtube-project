@@ -1,21 +1,41 @@
 <section class="mainview">
-<!-- main content -->
+    <div class="container"><!-- main content -->
 
-    <!-- description content -->
-    <div class="main-description"><p>Welcome to Youtube for Ballerz. It's a little bit of Youtube with all the necessary information you can find from Wikipedia. Just choose the year and genre
-      of the kind of music you want to hear and enjoy!</p></div>
-
-    <!-- input selection -->
-    <div class="generator">
-        <p>Choose a Year</p>
-        <select ng-model="year">
-            <option ng-repeat="decade in yearArray" value="{{decade}}">{{decade}}</option>
-        </select>
-
-        <p>Choose a Genre</p>
-        <select ng-model="genre">
-            <option ng-repeat="musicType in genreArray" value="{{musicType}}">{{musicType}}</option>
-        </select>
-        <button type="button" ng-click="sendChoices(year, genre)">Get My Video!</button>
+        <!-- description content - this will be wrapped in a row, tweleve column -->
+        <div class="row">
+            <div class="twelve columns">
+                <div class="main-description"><p>taco
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum.</p></div>
+            </div>
+        </div>
+        <!-- input selection - this will be wrapped in a row, tweleve column -->
+        <div class="row">
+            <div class="twelve columns">
+                <div class="generator">
+                    <!-- <p>Choose a Year</p> -->
+                     <h6 id="yearpadding">Choose a Year</h6>
+                    <select ng-model="year">
+                        <option ng-repeat="decade in yearArray" value="{{decade}}">{{decade}}</option>
+                    </select>
+                    <!-- <p>Choose a Genre</p> -->
+                    <h6 id="genrepadding">Choose a Genre</h6>
+                    <select ng-model="genre">
+                        <option ng-repeat="musicType in genreArray" value="{{musicType}}">{{musicType}}</option>
+                    </select>
+                    <button type="button" ng-click="sendChoices(year, genre)">Get My Video!</button>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
