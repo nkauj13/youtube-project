@@ -49,7 +49,11 @@ header {
   border-radius: 5px;
   max-width: 80%; }
   .main-description p {
-    padding: 1em; }
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em; }
+  .main-description #para-top {
+    margin-top: 1em; }
 
 .mainview {
   min-height: 90vh; }
