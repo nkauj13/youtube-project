@@ -229,10 +229,17 @@ div.video{
   }
 }
 
-p, li {
+p {
   font-family: helvetica;
   padding-right: 1em;
   padding-left: .5em;
+}
+li {
+    font-family: helvetica;
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -2em;
+    padding-left: 2.2em;
 }
 
 button {
