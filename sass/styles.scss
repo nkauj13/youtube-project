@@ -353,7 +353,7 @@ button {
 
 .animate:hover span, .animate:active span
 {
-padding: 0 30px;
+// padding: 0 30px;
 }
 
 .animate:hover span:after, .animate:active span:after
@@ -361,7 +361,6 @@ padding: 0 30px;
   transition: opacity 0.5s, top 0.5s, right 0.5s;
   opacity: 1;
   border-color: black;
-  right: 0;
   top: 50%;
 }
 
