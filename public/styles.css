@@ -228,8 +228,6 @@ button {
   font-family: "Nunito", sans-serif;
   font-size: 15px;
   width: auto;
-  padding-left: 2em;
-  padding-right: 2em;
   padding-bottom: 1em;
   background: #0D6;
   border: 1px solid #0D6;
@@ -265,8 +263,7 @@ button {
   transform: rotate(-45deg); }
 
 .animate:hover span, .animate:active span {
-  padding-right: 3em;
-  padding-left: 3em; }
+  padding-right: 26%; }
 
 .animate:hover span:after, .animate:active span:after {
   transition: opacity 0.5s, top 0.5s, right 0.5s;

@@ -297,8 +297,6 @@ button {
   font-size: 15px;
 
   width: auto;
-  padding-left: 2em;
-  padding-right: 2em;
   padding-bottom: 1em;
 
 
@@ -349,8 +347,7 @@ button {
 
 .animate:hover span, .animate:active span
 {
-  padding-right: 3em;
-  padding-left: 3em;
+  padding-right: 26%;
 }
 
 .animate:hover span:after, .animate:active span:after
