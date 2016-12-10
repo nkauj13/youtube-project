@@ -13,7 +13,7 @@ app.factory('ytFactory', function($http) {
     queryYT: function(query,topic) {
       $http({
         method: "GET",
-        url: "https://www.googleapis.com/youtube/v3/search?category=Rock&part=snippet&maxResults=20&q=" + query + "&type=video&key=AIzaSyBIupTaipxwn9WorBosS7NqGyn7tNMMkQM"
+        url: "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=35&q=" + query + "&type=video&key=AIzaSyBIupTaipxwn9WorBosS7NqGyn7tNMMkQM"
       })
         .then(function successCallback(response) {
         ytData = response.data;
