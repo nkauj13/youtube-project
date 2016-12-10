@@ -230,8 +230,9 @@ button {
   font-size: 15px;
   width: 150px;
   height: 50px;
-  padding-left: 2em;
-  padding-right: 2em;
+  width: 12em;
+  padding-left: 5px;
+  padding-right: 1em;
   padding-bottom: 1em;
   background: black;
   border: 1px solid black;
@@ -254,7 +255,7 @@ button {
   content: '  ';
   position: absolute;
   top: 0;
-  right: -18px;
+  right: -15px;
   opacity: 0;
   width: 10px;
   height: 10px;
@@ -265,6 +266,10 @@ button {
   border-right: none;
   transition: opacity 0.5s, top 0.5s, right 0.5s;
   transform: rotate(-45deg); }
+
+.animate:hover span, .animate:active span {
+  padding-right: 20px;
+  padding-left: 0em; }
 
 .animate:hover span:after, .animate:active span:after {
   transition: opacity 0.5s, top 0.5s, right 0.5s;

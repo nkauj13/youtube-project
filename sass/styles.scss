@@ -297,11 +297,12 @@ button {
   font-family: "Nunito", sans-serif;
   font-size: 15px;
 
+
   width: 150px;
   height: 50px;
-
-  padding-left: 2em;
-  padding-right: 2em;
+  width: 12em;
+  padding-left: 5px;
+  padding-right: 1em;
   padding-bottom: 1em;
 
 
@@ -336,7 +337,7 @@ button {
   content: '  ';
   position: absolute;
   top: 0;
-  right: -18px;
+  right: -15px;
   opacity: 0;
   width: 10px;
   height: 10px;
@@ -353,7 +354,8 @@ button {
 
 .animate:hover span, .animate:active span
 {
-// padding: 0 30px;
+  padding-right: 20px;
+  padding-left: 0em;
 }
 
 .animate:hover span:after, .animate:active span:after
