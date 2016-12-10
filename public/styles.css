@@ -48,12 +48,13 @@ header {
   border: solid 1.5px black;
   border-radius: 5px;
   max-width: 80%; }
+  .main-description h4 {
+    padding-right: .5em;
+    padding-left: .5em; }
   .main-description p {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
     margin-bottom: 1em; }
-  .main-description #para-top {
-    margin-top: 1em; }
 
 .mainview {
   min-height: 90vh; }
@@ -96,7 +97,7 @@ header {
     background-position: -80px; } }
 
 #yearpadding {
-  padding-top: 2em; }
+  padding-top: 1rem; }
 
 #countryview {
   padding: 1rem 1rem; }
@@ -252,7 +253,7 @@ button {
   content: '  ';
   position: absolute;
   top: 0;
-  right: -12px;
+  right: -11px;
   opacity: 0;
   width: 10px;
   height: 10px;
