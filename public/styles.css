@@ -50,7 +50,8 @@ header {
   max-width: 80%; }
   .main-description h4 {
     padding-right: .5em;
-    padding-left: .5em; }
+    padding-left: .5em;
+    padding-top: 1rem; }
   .main-description p {
     margin-left: .5em;
     margin-right: .5em;
