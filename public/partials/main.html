@@ -26,7 +26,7 @@
                     <select ng-model="genre">
                         <option ng-repeat="musicType in genreArray" value="{{musicType}}">{{musicType}}</option>
                     </select>
-                    <button type="button" ng-click="sendChoices(year, genre)">Get My Video!</button>
+                    <button type="button" class="animate" ng-click="sendChoices(year, genre)"><span>Get My Video!</span></button>
                 </div>
             </div>
         </div>
