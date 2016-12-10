@@ -97,7 +97,7 @@ header {
     background-position: -80px; } }
 
 #yearpadding {
-  padding-top: 2em; }
+  padding-top: 1rem; }
 
 #countryview {
   padding: 1rem 1rem; }
@@ -228,8 +228,6 @@ button {
   color: black;
   font-family: "Nunito", sans-serif;
   font-size: 15px;
-  width: 150px;
-  height: 50px;
   width: 12em;
   padding-left: 5px;
   padding-right: 1em;
@@ -255,7 +253,7 @@ button {
   content: '  ';
   position: absolute;
   top: 0;
-  right: -15px;
+  right: -12px;
   opacity: 0;
   width: 10px;
   height: 10px;
@@ -275,6 +273,7 @@ button {
   transition: opacity 0.5s, top 0.5s, right 0.5s;
   opacity: 1;
   border-color: black;
+  right: 0;
   top: 50%; }
 
 select {

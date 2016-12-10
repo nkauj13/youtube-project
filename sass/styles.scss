@@ -133,7 +133,7 @@ header {
 }
 
 #yearpadding {
-  padding-top: 2em;
+  padding-top: 1rem;
 }
 
 #countryview {
@@ -283,91 +283,88 @@ li {
 }
 
 button {
-  display: block;
-  margin-top: 1%;
-  margin-left: 1em;
-  margin-bottom: 1em;
+ display: block;
+ margin-top: 1%;
+ margin-left: 1em;
+ margin-bottom: 1em;
 }
 
 .animate
 {
-  text-transform: uppercase;
-  text-align: center;
-  color: black;
-  font-family: "Nunito", sans-serif;
-  font-size: 15px;
+ text-transform: uppercase;
+ text-align: center;
+ color: black;
+ font-family: "Nunito", sans-serif;
+ font-size: 15px;
+
+ width: 12em;
+ padding-left: 5px;
+ padding-right: 1em;
+ padding-bottom: 1em;
 
 
-  width: 150px;
-  height: 50px;
-  width: 12em;
-  padding-left: 5px;
-  padding-right: 1em;
-  padding-bottom: 1em;
+ background: black;
+ border: 1px solid black;
+ color: #FFF;
+ overflow: hidden;
 
-
-  background: black;
-  border: 1px solid black;
-  color: #FFF;
-  overflow: hidden;
-
-  transition: all 0.5s;
+ transition: all 0.5s;
 }
 
 .animate:hover, .animate:active
 {
-  text-decoration: none;
-  color: black;
-  border-color: black;
-  background: #FFF;
+ text-decoration: none;
+ color: black;
+ border-color: black;
+ background: #FFF;
 }
 
 .animate span
 {
-  display: inline-block;
-  position: relative;
+ display: inline-block;
+ position: relative;
 
 
-
-  transition: padding-right 0.5s;
+ transition: padding-right 0.5s;
 }
 
 .animate span:after
 {
-  content: '  ';
-  position: absolute;
-  top: 0;
-  right: -15px;
-  opacity: 0;
-  width: 10px;
-  height: 10px;
-  margin-top: -10px;
+ content: '  ';
+ position: absolute;
+ top: 0;
+ right: -12px;
+ opacity: 0;
+ width: 10px;
+ height: 10px;
+ margin-top: -10px;
 
-  background: rgba(0, 0, 0, 0);
-  border: 3px solid #FFF;
-  border-top: none;
-  border-right: none;
+ background: rgba(0, 0, 0, 0);
+ border: 3px solid #FFF;
+ border-top: none;
+ border-right: none;
 
-  transition: opacity 0.5s, top 0.5s, right 0.5s;
-  transform: rotate(-45deg);
+ transition: opacity 0.5s, top 0.5s, right 0.5s;
+ transform: rotate(-45deg);
 }
 
 .animate:hover span, .animate:active span
 {
-  padding-right: 20px;
-  padding-left: 0em;
+ padding-right: 20px;
+ padding-left: 0em;
 }
 
 .animate:hover span:after, .animate:active span:after
 {
-  transition: opacity 0.5s, top 0.5s, right 0.5s;
-  opacity: 1;
-  border-color: black;
-  top: 50%;
+ transition: opacity 0.5s, top 0.5s, right 0.5s;
+ opacity: 1;
+ border-color: black;
+ right: 0;
+ top: 50%;
 }
 
 select {
-  width: 140px;
+ width: 140px;
 }
 
 .ng-pristine, .ng-valid, .ng-not-empty, .ng-dirty, .ng-valid-parse,
