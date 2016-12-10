@@ -49,13 +49,20 @@ header {
   border-radius: 5px;
   max-width: 80%; }
   .main-description p {
-    padding: 1em; }
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em; }
+  .main-description #para-top {
+    margin-top: 1em; }
 
 .mainview {
   min-height: 90vh; }
 
 .generator {
   background-color: white;
+  background-image: url(images/headphones_bw.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0% auto;
   padding: 1rem 1rem;
   padding-bottom: 10px;
@@ -68,6 +75,25 @@ header {
     margin-bottom: .5rem;
     padding-right: 1em;
     padding-left: 1em; }
+
+@media (min-width: 400px) {
+  .generator {
+    background-size: 250%;
+    background-position: -234px; } }
+
+@media (min-width: 550px) {
+  .generator {
+    background-size: 220%; } }
+
+@media (min-width: 750px) {
+  .generator {
+    background-size: 175%;
+    background-position: -180px; } }
+
+@media (min-width: 1000px) {
+  .generator {
+    background-size: 130%;
+    background-position: -80px; } }
 
 #yearpadding {
   padding-top: 2em; }
