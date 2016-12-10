@@ -285,7 +285,7 @@ button {
   display: block;
   margin-top: 1%;
   margin-left: 1em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 
 .animate
@@ -297,8 +297,8 @@ button {
   font-size: 15px;
 
   width: auto;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   padding-bottom: 1em;
 
 
@@ -349,8 +349,8 @@ button {
 
 .animate:hover span, .animate:active span
 {
-  padding-right: 3em;
-  padding-left: 3em;
+  padding-right: 1em;
+  padding-left: 0em;
 }
 
 .animate:hover span:after, .animate:active span:after

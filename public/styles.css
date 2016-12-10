@@ -219,7 +219,7 @@ button {
   display: block;
   margin-top: 1%;
   margin-left: 1em;
-  margin-bottom: 3em; }
+  margin-bottom: 1em; }
 
 .animate {
   text-transform: uppercase;
@@ -228,8 +228,8 @@ button {
   font-family: "Nunito", sans-serif;
   font-size: 15px;
   width: auto;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   padding-bottom: 1em;
   background: black;
   border: 1px solid black;
@@ -265,8 +265,8 @@ button {
   transform: rotate(-45deg); }
 
 .animate:hover span, .animate:active span {
-  padding-right: 3em;
-  padding-left: 3em; }
+  padding-right: 1em;
+  padding-left: 0em; }
 
 .animate:hover span:after, .animate:active span:after {
   transition: opacity 0.5s, top 0.5s, right 0.5s;
