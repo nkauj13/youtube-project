@@ -35,8 +35,11 @@
             <div class="topAlbums">
               <h3>Top Albums</h3>
               <p ng-if="showAlbumError">{{albumErrorMsg}}</p>
-              <ul ng-if="showAlbumData">
-                <li ng-repeat="album in albumArray | limitTo:25">{{album.name}}</li>
+
+             <ul ng-if="showAlbumData">
+                <li ng-repeat="album in topAlbumArray | limitTo:25">
+                  <a ng-href="{{album.url}}" target="_blank">{{album.name}}</a>
+                </li>
               </ul>
             </div>
         </div>
@@ -47,8 +50,11 @@
           <div class="similarArtist">
             <h3>Similar Artists</h3>
             <p ng-if="showSimArtistError">{{simArtistErrorMsg}}</p>
+
             <ul ng-if="showSimArtistData">
-              <li ng-repeat="simArtist in simArtistArray | limitTo:25">{{simArtist.name}}</li>
+              <li ng-repeat="simArtist in simArtistArray | limitTo:25">
+                <a ng-href="{{simArtist.url}}" target="_blank">{{simArtist.name}}</a>
+              </li>
             </ul>
           </div>
         </div><!-- end 2 column row -->
