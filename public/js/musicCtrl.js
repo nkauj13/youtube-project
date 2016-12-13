@@ -82,8 +82,25 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 				else {
 
 					$scope.showAlbumData = true;
-					$scope.albumArray = response.data.topalbums.album;
-					
+
+					//console.log(response.data.topalbums);
+				
+					//create an empty array to hold objects with properties
+					$scope.topAlbumArray = [];
+
+					//store data from response in an array
+					var albumData = response.data.topalbums;
+
+					//loop through the array & populate the empty arrwy with objects
+					albumData.album.forEach(function(element) {
+						var albumObj =
+							{
+								name: element.name,
+								url: element.url
+							};
+						$scope.topAlbumArray.push(albumObj);
+					});	
+					//console.log($scope.topAlbumArray);		
 				}
 
 	});
@@ -98,16 +115,35 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 
 					$scope.showSimArtistError = true;
 					$scope.simArtistErrorMsg = "Sorry, we could not find similar artists";
-					//onsole.log(response.data.message);
+					//console.log(response.data.message);
 					//console.log(response.data.similarartists);
 
 				}
 				else {
-					//console.log(response.data.similarartists);
+					
 					$scope.showSimArtistData = true;
-					$scope.simArtistArray = response.data.similarartists.artist;
-				}
+					//console.log(response.data.similarartists);
+					
+					//create an empty array to hold objects with properties
+					$scope.simArtistArray = [];
 
+					//store data from response in an array
+					var artistData = response.data.similarartists;
+
+					//loop through the array & populate the empty arrwy with objects
+					artistData.artist.forEach(function(element) {
+						var newObj =
+							{
+								name: element.name,
+								url: element.url
+							};
+						$scope.simArtistArray.push(newObj);
+						//console.log(newObj);
+					});
+
+					//console.log($scope.simArtistArray);
+				}
+				
 	});
 
 });

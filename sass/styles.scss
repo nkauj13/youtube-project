@@ -144,9 +144,12 @@ header {
     text-align: center;
     color: $country-bodytwo;
   }
-  p, li {
+  p, li, a {
     font-family: helvetica;
     color: $country-bodytwo;
+  }
+  a {
+    text-decoration: none;
   }
   div.country {
     background-color: rgba($country-bodytwo, $alpha);
@@ -170,9 +173,12 @@ header {
     text-align: center;
     color: $pop-bodytwo;
   }
-  p, li {
+  p, li , a{
     font-family: helvetica;
     color: $pop-bodytwo;
+  }
+  a {
+    text-decoration: none;
   }
   div.pop  {
     background-color: rgba($pop-bodytwo, $alpha);
@@ -197,9 +203,12 @@ header {
     text-align: center;
     color: $rock-bodytwo;
   }
-  p, li {
+  p, li, a {
     font-family: helvetica;
     color: $rock-bodytwo;
+  }
+  a {
+    text-decoration: none;
   }
   div.rock {
     background-color: rgba($rock-bodytwo, $alpha);
@@ -223,9 +232,11 @@ header {
     text-align: center;
     color: $rap-bodytwo;
   }
-  p, li {
+  p, li, a {
     font-family: helvetica;
     color: $rap-bodytwo;
+  }
+  a {text-decoration: none;
   }
   div.rap {
     background-color: rgba($rap-bodytwo, $alpha);
@@ -363,6 +374,14 @@ button {
  top: 50%;
 }
 
+.newVid-button {
+  display: block;
+  margin: 2.5% auto;
+  background-color: $black;
+  a {
+    color: $white;
+  }
+}
 select {
  width: 140px;
 }

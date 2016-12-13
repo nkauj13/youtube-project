@@ -106,9 +106,11 @@ header {
     font-family: 'Pacifico', cursive;
     text-align: center;
     color: #633f17; }
-  #countryview p, #countryview li {
+  #countryview p, #countryview li, #countryview a {
     font-family: helvetica;
     color: #633f17; }
+  #countryview a {
+    text-decoration: none; }
   #countryview div.country {
     background-color: rgba(99, 63, 23, 0.4); }
   #countryview .country-wrapper {
@@ -126,9 +128,11 @@ header {
     font-family: 'Lobster', cursive;
     text-align: center;
     color: #041871; }
-  #popview p, #popview li {
+  #popview p, #popview li, #popview a {
     font-family: helvetica;
     color: #041871; }
+  #popview a {
+    text-decoration: none; }
   #popview div.pop {
     background-color: rgba(4, 24, 113, 0.4); }
   #popview .pop-wrapper {
@@ -147,9 +151,11 @@ header {
     font-family: 'New Rocker', cursive;
     text-align: center;
     color: #602d90; }
-  #rockview p, #rockview li {
+  #rockview p, #rockview li, #rockview a {
     font-family: helvetica;
     color: #602d90; }
+  #rockview a {
+    text-decoration: none; }
   #rockview div.rock {
     background-color: rgba(96, 45, 144, 0.4); }
   #rockview .rock-wrapper {
@@ -167,9 +173,11 @@ header {
     font-family: 'Rock Salt', cursive;
     text-align: center;
     color: #9a1d20; }
-  #rapview p, #rapview li {
+  #rapview p, #rapview li, #rapview a {
     font-family: helvetica;
     color: #9a1d20; }
+  #rapview a {
+    text-decoration: none; }
   #rapview div.rap {
     background-color: rgba(154, 29, 32, 0.4); }
   #rapview .rap-wrapper {
@@ -276,6 +284,13 @@ button {
   border-color: black;
   right: 0;
   top: 50%; }
+
+.newVid-button {
+  display: block;
+  margin: 2.5% auto;
+  background-color: black; }
+  .newVid-button a {
+    color: white; }
 
 select {
   width: 140px; }
