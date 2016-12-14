@@ -44,7 +44,7 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 
 	//console.log(lastFMQueryString);
 
-	$http.get('http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' +lastFMQueryString+ '&api_key=ccdf156dfa78f0a2462aa132687608f0&format=json')
+	$http.get('https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' +lastFMQueryString+ '&api_key=ccdf156dfa78f0a2462aa132687608f0&format=json')
 			.then(function successCallback(response){
 
 				//console.log(response.data);
@@ -63,7 +63,7 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 
 	});
 
-	$http.get('http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=' + lastFMQueryString + '&autocorrect=1&api_key=ccdf156dfa78f0a2462aa132687608f0&format=json')
+	$http.get('https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=' + lastFMQueryString + '&autocorrect=1&api_key=ccdf156dfa78f0a2462aa132687608f0&format=json')
 			.then(function successCallback(response){
 
 				//console.log(response.data.topalbums);
@@ -105,7 +105,7 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 
 	});
 
-	$http.get('http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=' + lastFMQueryString + '&api_key=ccdf156dfa78f0a2462aa132687608f0&format=json')
+	$http.get('https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=' + lastFMQueryString + '&api_key=ccdf156dfa78f0a2462aa132687608f0&format=json')
 			.then(function successCallback(response){
 
 				//console.log(response.data);
