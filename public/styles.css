@@ -100,20 +100,20 @@ header {
 #yearpadding {
   padding-top: 1rem; }
 
-#countryview {
+.countryview {
   padding: 1rem 1rem; }
-  #countryview h1, #countryview h3 {
+  .countryview h1, .countryview h3 {
     font-family: 'Pacifico', cursive;
     text-align: center;
     color: #633f17; }
-  #countryview p, #countryview li, #countryview a {
+  .countryview p, .countryview li, .countryview a {
     font-family: helvetica;
     color: #633f17; }
-  #countryview a {
+  .countryview a {
     text-decoration: none; }
-  #countryview div.country {
+  .countryview div.country {
     background-color: rgba(99, 63, 23, 0.4); }
-  #countryview .country-wrapper {
+  .countryview .country-wrapper {
     background-color: rgba(99, 63, 23, 0.4);
     border: solid 1.5px black;
     border-radius: 5px;
@@ -122,20 +122,20 @@ header {
     padding: 1rem 1rem;
     position: relative; }
 
-#popview {
+.popview {
   padding: 1rem 1rem; }
-  #popview h1, #popview h3 {
+  .popview h1, .popview h3 {
     font-family: 'Lobster', cursive;
     text-align: center;
     color: #041871; }
-  #popview p, #popview li, #popview a {
+  .popview p, .popview li, .popview a {
     font-family: helvetica;
     color: #041871; }
-  #popview a {
+  .popview a {
     text-decoration: none; }
-  #popview div.pop {
+  .popview div.pop {
     background-color: rgba(4, 24, 113, 0.4); }
-  #popview .pop-wrapper {
+  .popview .pop-wrapper {
     background-color: rgba(4, 24, 113, 0.4);
     border: solid 1.5px black;
     border-radius: 5px;
@@ -144,21 +144,21 @@ header {
     position: relative;
     max-width: 80%; }
 
-#rockview {
+.rockview {
   padding: 1rem 1rem;
   width: auto; }
-  #rockview h1, #rockview h3 {
+  .rockview h1, .rockview h3 {
     font-family: 'New Rocker', cursive;
     text-align: center;
     color: #602d90; }
-  #rockview p, #rockview li, #rockview a {
+  .rockview p, .rockview li, .rockview a {
     font-family: helvetica;
     color: #602d90; }
-  #rockview a {
+  .rockview a {
     text-decoration: none; }
-  #rockview div.rock {
+  .rockview div.rock {
     background-color: rgba(96, 45, 144, 0.4); }
-  #rockview .rock-wrapper {
+  .rockview .rock-wrapper {
     background-color: rgba(96, 45, 144, 0.4);
     border: solid 1.5px black;
     border-radius: 5px;
@@ -167,20 +167,20 @@ header {
     position: relative;
     max-width: 80%; }
 
-#rapview {
+.rapview {
   padding: 1rem 1rem; }
-  #rapview h1, #rapview h3 {
+  .rapview h1, .rapview h3 {
     font-family: 'Rock Salt', cursive;
     text-align: center;
     color: #9a1d20; }
-  #rapview p, #rapview li, #rapview a {
+  .rapview p, .rapview li, .rapview a {
     font-family: helvetica;
     color: #9a1d20; }
-  #rapview a {
+  .rapview a {
     text-decoration: none; }
-  #rapview div.rap {
+  .rapview div.rap {
     background-color: rgba(154, 29, 32, 0.4); }
-  #rapview .rap-wrapper {
+  .rapview .rap-wrapper {
     background-color: rgba(154, 29, 32, 0.4);
     border: solid 1.5px black;
     border-radius: 5px;
