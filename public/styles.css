@@ -222,6 +222,8 @@ li {
   font-family: helvetica;
   list-style-type: disc;
   list-style-position: inside;
+  font-style: italic;
+  text-decoration: underline;
   text-indent: -2em;
   padding-left: 2.2em; }
 
