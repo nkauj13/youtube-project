@@ -1,7 +1,7 @@
 var app = angular.module('musicMod');
 
 app.controller('musicCtrl', function($scope, $http, ytFactory){
-	console.log("music controller!")
+	//console.log("music controller!")
 
 	// Create a variable to store the returned videoID in
 	var stuff2 = ytFactory.getYTData();
@@ -53,12 +53,31 @@ app.controller('musicCtrl', function($scope, $http, ytFactory){
 
 				if(response.data.message === "The artist you supplied could not be found" || response.data.artist.bio.content === "") {
 
-					$scope.artistBio = "Sorry, we could not find the artist's bio";
+					$scope.showArtistError = true;
+					$scope.artistErroMsg = "Sorry, we could not find the artist's bio";
 					//console.log(response.data.message);
+					//console.log($scope.showArtistError);
 				}
 				else {
 
-					$scope.artistBio = response.data.artist.bio.content;
+					//$scope.artistBio = response.data.artist.bio.content;
+
+					var bioData = response.data.artist.bio.content;
+					console.log(bioData.length);
+
+					if (bioData.length > 800) { 
+						$scope.showTruncated = true;
+
+						$scope.truncatedBio = bioData.substr(0,800);
+						$scope.bioUrl = response.data.artist.url;
+					}
+					
+					else {
+						$scope.showFull = true;
+						$scope.artistBio = bioData;
+						console.log($scope.showFull);
+					}
+
 				}
 
 	});

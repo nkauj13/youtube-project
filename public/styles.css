@@ -121,6 +121,8 @@ header {
     margin: auto;
     padding: 1rem 1rem;
     position: relative; }
+  .countryview a.bioLink {
+    font-weight: bold; }
 
 .popview {
   padding: 1rem 1rem; }
@@ -143,6 +145,8 @@ header {
     padding: 1rem 1rem;
     position: relative;
     max-width: 80%; }
+  .popview a.bioLink {
+    font-weight: bold; }
 
 .rockview {
   padding: 1rem 1rem;
@@ -166,6 +170,8 @@ header {
     padding: 1rem 1rem;
     position: relative;
     max-width: 80%; }
+  .rockview a.bioLink {
+    font-weight: bold; }
 
 .rapview {
   padding: 1rem 1rem; }
@@ -188,6 +194,8 @@ header {
     padding: 1rem 1rem;
     position: relative;
     max-width: 80%; }
+  .rapview a.bioLink {
+    font-weight: bold; }
 
 div.video {
   margin: auto;

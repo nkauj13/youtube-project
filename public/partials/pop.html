@@ -25,7 +25,14 @@
         <div class="twelve columns">
           <div class="artistBio pop">
             <h3>Artist Biography</h3>
-            <p>{{artistBio}}</p>
+
+            <p ng-if="showArtistError">{{artistErroMsg}}</p>
+
+            <p ng-if="showFull">{{artistBio}}</p>
+
+            <p ng-if="showTruncated">{{truncatedBio}}
+              <a class="bioLink" ng-href="{{bioUrl}}/+wiki" target="_blank">...read more</a>
+            </p>
           </div>
         </div>
       </div>
